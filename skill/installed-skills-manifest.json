@@ -1,30 +1,11 @@
 {
-  "count": 74,
+  "note": "仅包含非 OpenClaw 内置技能（用户安装/自定义）",
+  "count": 23,
   "skills": [
-    {
-      "name": "1password",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/1password",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/1password/SKILL.md"
-    },
-    {
-      "name": "apple-notes",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/apple-notes",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/apple-notes/SKILL.md"
-    },
-    {
-      "name": "apple-reminders",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/apple-reminders",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/apple-reminders/SKILL.md"
-    },
     {
       "name": "baoyu-post-to-wechat",
       "source": "/Users/chenshuang/.agents/skills/baoyu-post-to-wechat",
       "skill_md": "/Users/chenshuang/.agents/skills/baoyu-post-to-wechat/SKILL.md"
-    },
-    {
-      "name": "bear-notes",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/bear-notes",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/bear-notes/SKILL.md"
     },
     {
       "name": "binance-activity-daily",
@@ -37,34 +18,9 @@
       "skill_md": "/Users/chenshuang/.openclaw/workspace-coding/Wali-Smart-Agent-based-on-Binance/skills/binance-square-daily/SKILL.md"
     },
     {
-      "name": "blogwatcher",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/blogwatcher",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/blogwatcher/SKILL.md"
-    },
-    {
-      "name": "blucli",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/blucli",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/blucli/SKILL.md"
-    },
-    {
-      "name": "bluebubbles",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/bluebubbles",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/bluebubbles/SKILL.md"
-    },
-    {
       "name": "bnbchain-mcp",
       "source": "/Users/chenshuang/.agents/skills/bnbchain-mcp",
       "skill_md": "/Users/chenshuang/.agents/skills/bnbchain-mcp/SKILL.md"
-    },
-    {
-      "name": "camsnap",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/camsnap",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/camsnap/SKILL.md"
-    },
-    {
-      "name": "canvas",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/canvas",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/canvas/SKILL.md"
     },
     {
       "name": "cci-trader-pushover",
@@ -72,29 +28,9 @@
       "skill_md": "/Users/chenshuang/.openclaw/workspace-coding/Wali-Smart-Agent-based-on-Binance/skills/cci-trader-pushover/SKILL.md"
     },
     {
-      "name": "clawhub",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/clawhub",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/clawhub/SKILL.md"
-    },
-    {
-      "name": "coding-agent",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/coding-agent",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/coding-agent/SKILL.md"
-    },
-    {
       "name": "crypto-market-rank",
       "source": "/Users/chenshuang/.agents/skills/crypto-market-rank",
       "skill_md": "/Users/chenshuang/.agents/skills/crypto-market-rank/SKILL.md"
-    },
-    {
-      "name": "discord",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/discord",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/discord/SKILL.md"
-    },
-    {
-      "name": "eightctl",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/eightctl",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/eightctl/SKILL.md"
     },
     {
       "name": "find-skills",
@@ -102,59 +38,9 @@
       "skill_md": "/Users/chenshuang/.agents/skills/find-skills/SKILL.md"
     },
     {
-      "name": "gemini",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/gemini",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/gemini/SKILL.md"
-    },
-    {
-      "name": "gh-issues",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/gh-issues",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/gh-issues/SKILL.md"
-    },
-    {
-      "name": "gifgrep",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/gifgrep",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/gifgrep/SKILL.md"
-    },
-    {
-      "name": "github",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/github",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/github/SKILL.md"
-    },
-    {
       "name": "github-ops",
       "source": "/Users/chenshuang/.openclaw/workspace-coding/Wali-Smart-Agent-based-on-Binance/skills/github-ops",
       "skill_md": "/Users/chenshuang/.openclaw/workspace-coding/Wali-Smart-Agent-based-on-Binance/skills/github-ops/SKILL.md"
-    },
-    {
-      "name": "gog",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/gog",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/gog/SKILL.md"
-    },
-    {
-      "name": "goplaces",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/goplaces",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/goplaces/SKILL.md"
-    },
-    {
-      "name": "healthcheck",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/healthcheck",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/healthcheck/SKILL.md"
-    },
-    {
-      "name": "himalaya",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/himalaya",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/himalaya/SKILL.md"
-    },
-    {
-      "name": "imsg",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/imsg",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/imsg/SKILL.md"
-    },
-    {
-      "name": "mcporter",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/mcporter",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/mcporter/SKILL.md"
     },
     {
       "name": "meme-rush",
@@ -162,54 +48,9 @@
       "skill_md": "/Users/chenshuang/.agents/skills/meme-rush/SKILL.md"
     },
     {
-      "name": "model-usage",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/model-usage",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/model-usage/SKILL.md"
-    },
-    {
-      "name": "nano-banana-pro",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/nano-banana-pro",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/nano-banana-pro/SKILL.md"
-    },
-    {
-      "name": "nano-pdf",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/nano-pdf",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/nano-pdf/SKILL.md"
-    },
-    {
-      "name": "notion",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/notion",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/notion/SKILL.md"
-    },
-    {
-      "name": "obsidian",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/obsidian",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/obsidian/SKILL.md"
-    },
-    {
-      "name": "openai-image-gen",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/openai-image-gen",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/openai-image-gen/SKILL.md"
-    },
-    {
-      "name": "openai-whisper",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/openai-whisper",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/openai-whisper/SKILL.md"
-    },
-    {
-      "name": "openai-whisper-api",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/openai-whisper-api",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/openai-whisper-api/SKILL.md"
-    },
-    {
       "name": "openclaw-contrib-helper",
       "source": "/Users/chenshuang/.openclaw/workspace-coding/Wali-Smart-Agent-based-on-Binance/skills/openclaw-contrib-helper",
       "skill_md": "/Users/chenshuang/.openclaw/workspace-coding/Wali-Smart-Agent-based-on-Binance/skills/openclaw-contrib-helper/SKILL.md"
-    },
-    {
-      "name": "openhue",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/openhue",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/openhue/SKILL.md"
     },
     {
       "name": "opennews-mcp",
@@ -220,21 +61,6 @@
       "name": "opentwitter-mcp",
       "source": "/Users/chenshuang/.agents/skills/opentwitter-mcp",
       "skill_md": "/Users/chenshuang/.agents/skills/opentwitter-mcp/SKILL.md"
-    },
-    {
-      "name": "oracle",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/oracle",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/oracle/SKILL.md"
-    },
-    {
-      "name": "ordercli",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/ordercli",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/ordercli/SKILL.md"
-    },
-    {
-      "name": "peekaboo",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/peekaboo",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/peekaboo/SKILL.md"
     },
     {
       "name": "query-address-info",
@@ -252,54 +78,14 @@
       "skill_md": "/Users/chenshuang/.agents/skills/query-token-info/SKILL.md"
     },
     {
-      "name": "sag",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/sag",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/sag/SKILL.md"
-    },
-    {
-      "name": "session-logs",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/session-logs",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/session-logs/SKILL.md"
-    },
-    {
-      "name": "sherpa-onnx-tts",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/sherpa-onnx-tts",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/sherpa-onnx-tts/SKILL.md"
-    },
-    {
-      "name": "skill-creator",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/skill-creator",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/skill-creator/SKILL.md"
-    },
-    {
       "name": "skill-vetter",
       "source": "/Users/chenshuang/.openclaw/workspace-coding/Wali-Smart-Agent-based-on-Binance/skills/skill-vetter",
       "skill_md": "/Users/chenshuang/.openclaw/workspace-coding/Wali-Smart-Agent-based-on-Binance/skills/skill-vetter/SKILL.md"
     },
     {
-      "name": "slack",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/slack",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/slack/SKILL.md"
-    },
-    {
-      "name": "songsee",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/songsee",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/songsee/SKILL.md"
-    },
-    {
-      "name": "sonoscli",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/sonoscli",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/sonoscli/SKILL.md"
-    },
-    {
       "name": "spot",
       "source": "/Users/chenshuang/.agents/skills/spot",
       "skill_md": "/Users/chenshuang/.agents/skills/spot/SKILL.md"
-    },
-    {
-      "name": "spotify-player",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/spotify-player",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/spotify-player/SKILL.md"
     },
     {
       "name": "square-post",
@@ -317,24 +103,9 @@
       "skill_md": "/Users/chenshuang/.openclaw/workspace-coding/Wali-Smart-Agent-based-on-Binance/skills/telegram-MTProto-to-pushover/SKILL.md"
     },
     {
-      "name": "things-mac",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/things-mac",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/things-mac/SKILL.md"
-    },
-    {
-      "name": "tmux",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/tmux",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/tmux/SKILL.md"
-    },
-    {
       "name": "trading-signal",
       "source": "/Users/chenshuang/.agents/skills/trading-signal",
       "skill_md": "/Users/chenshuang/.agents/skills/trading-signal/SKILL.md"
-    },
-    {
-      "name": "trello",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/trello",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/trello/SKILL.md"
     },
     {
       "name": "twitter-daily",
@@ -342,34 +113,9 @@
       "skill_md": "/Users/chenshuang/.openclaw/workspace-coding/Wali-Smart-Agent-based-on-Binance/skills/twitter-daily/SKILL.md"
     },
     {
-      "name": "video-frames",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/video-frames",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/video-frames/SKILL.md"
-    },
-    {
-      "name": "voice-call",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/voice-call",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/voice-call/SKILL.md"
-    },
-    {
-      "name": "wacli",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/wacli",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/wacli/SKILL.md"
-    },
-    {
       "name": "wali-visual-menu-manager",
       "source": "/Users/chenshuang/.openclaw/workspace-coding/Wali-Smart-Agent-based-on-Binance/skills/wali-visual-menu-manager",
       "skill_md": "/Users/chenshuang/.openclaw/workspace-coding/Wali-Smart-Agent-based-on-Binance/skills/wali-visual-menu-manager/SKILL.md"
-    },
-    {
-      "name": "weather",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/weather",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/weather/SKILL.md"
-    },
-    {
-      "name": "xurl",
-      "source": "/opt/homebrew/lib/node_modules/openclaw/skills/xurl",
-      "skill_md": "/opt/homebrew/lib/node_modules/openclaw/skills/xurl/SKILL.md"
     }
   ]
 }
