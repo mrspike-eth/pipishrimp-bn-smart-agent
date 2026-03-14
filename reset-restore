@@ -2,18 +2,41 @@
 
 目标：在上下文重置（/reset、/new、长会话压缩）后，按固定流程恢复到 reset 前的菜单、配置和操作状态。
 
-## 0. 恢复原则
-- 单一事实源：本仓库文件。
-- 先恢复菜单，再恢复各业务模块。
-- 菜单回调统一使用 `nav:`（跳转）和 `act:`（动作）。
+---
 
-## 1. Step-1（必须先做）：从 settings 开始恢复菜单
+## A. 快速执行（推荐）
+
+在仓库根目录执行：
+
+```bash
+bash scripts/restore_from_reset.sh
+```
+
+执行成功标准：
+- 输出 `RESULT: PASS`
+- 输出 `缺失项=0`
+
+---
+
+## B. 恢复原则
+
+1. 单一事实源：本仓库文件。
+2. 先恢复菜单，再恢复各业务模块。
+3. 菜单回调统一使用 `nav:`（跳转）和 `act:`（动作）。
+4. 不允许“只发文本，不发按钮”。
+
+---
+
+## C. 手动流程（脚本不可用时）
+
+### Step-1（必须先做）：从 settings 开始恢复菜单
+
 优先路径：`settings/menu-management/`
 
-1) 读取 `settings/menu-management/visual-menu.json`（完整一级/二级/三级菜单真相）。
-2) 读取 `settings/menu-management/menu-root.json`（一级菜单按钮顺序）。
-3) 读取 `settings/menu-management/menu-nodes.json`（二级/三级节点与 action 参数）。
-4) 读取 `settings/menu-management/skill-list-panel.json`（Skill 面板布局，必须是 grouped-vertical）。
+1) 读取 `visual-menu.json`（完整一级/二级/三级菜单真相）  
+2) 读取 `menu-root.json`（一级菜单按钮顺序）  
+3) 读取 `menu-nodes.json`（二级/三级节点与 action 参数）  
+4) 读取 `skill-list-panel.json`（Skill 面板布局，必须是 grouped-vertical）
 
 恢复标准：
 - 一级菜单 10 项完整显示：
@@ -22,10 +45,11 @@
   - 信号监控 / 智能投资助理
   - 内容创作 / 学习模式
   - Skill技能管理 / 设置
-- `BN Wallet链上交易` 不可缩写。
-- 回调前缀必须为 `nav:`、`act:`。
+- `BN Wallet链上交易` 不可缩写
+- 回调前缀必须为 `nav:`、`act:`
 
-## 2. Step-2：逐目录恢复一级菜单对应配置
+### Step-2：逐目录恢复一级菜单对应配置
+
 按下列目录顺序恢复（每个目录中的 `menu-config.json` 为准）：
 1. `binance-daily/`
 2. `watchlist/`
@@ -39,20 +63,37 @@
 10. `settings/`
 
 说明：
-- 若目录存在 `submenus.json`，则必须同步恢复其全部二级/三级子节点。
-- 不允许只恢复文本，不恢复按钮回调。
+- 若目录存在 `submenus.json`，则必须同步恢复其全部二级/三级子节点
+- 不允许只恢复文本，不恢复按钮回调
 
-## 3. Step-3：恢复技能视图与分组
-- 读取 `skill/skills-config.json`。
-- 保证“已安装技能”使用分组纵向聚合显示（同组纵向连续，不跨组混排）。
+### Step-3：恢复技能视图与分组
 
-## 4. Step-4：状态检查清单
-- 一级菜单 10 项是否齐全。
-- `nav/act` 回调是否全部可达。
-- Skill 分组是否符合 grouped-vertical。
-- 关键策略是否保留：聪明钱监控默认不自动启动，按需手动启动。
+- 读取 `skill/skills-config.json`
+- 保证“已安装技能”使用分组纵向聚合显示（同组纵向连续，不跨组混排）
 
-## 5. Step-5：恢复后交互建议
-- 先发送主菜单按钮。
-- 再按用户点击回放二级/三级菜单。
-- 若用户要求“全面恢复”，执行全链路点测并输出“缺失项=0/问题列表”。
+### Step-4：状态检查清单
+
+- 一级菜单 10 项是否齐全
+- `nav/act` 回调是否全部可达
+- Skill 分组是否符合 grouped-vertical
+- 关键策略是否保留：聪明钱监控默认不自动启动，按需手动启动
+
+### Step-5：恢复后交互建议
+
+- 先发送主菜单按钮
+- 再按用户点击回放二级/三级菜单
+- 若用户要求“全面恢复”，执行全链路点测并输出“缺失项=0/问题列表”
+
+---
+
+## D. 验收输出模板（固定）
+
+```text
+恢复报告：
+- 菜单恢复：PASS/FAIL
+- 回调可达：PASS/FAIL
+- Skill分组：PASS/FAIL
+- 监控策略：PASS/FAIL
+- 缺失项=N
+RESULT: PASS/FAIL
+```
