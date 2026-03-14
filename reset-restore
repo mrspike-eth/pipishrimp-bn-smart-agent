@@ -105,3 +105,28 @@ bash scripts/restore_from_reset.sh
 - 缺失项=N
 RESULT: PASS/FAIL
 ```
+
+
+## F. 菜单目录 restore 索引（逐菜单恢复入口）
+
+每个一级菜单目录均包含 `restore` 文件，reset 后优先按对应目录执行恢复：
+- `binance-daily/restore`
+- `watchlist/restore`
+- `binance-spot-trade/restore`
+- `bn-wallet-onchain-trade/restore`
+- `signal-monitor/restore`
+- `smart-investment-assistant/restore`
+- `content-creation/restore`
+- `learning-mode/restore`
+- `skill-management/restore`
+- `settings/restore`
+
+其中“信号监控 -> 进程管理”专用恢复路径：
+- `signal-monitor/process-management/restore`
+- `signal-monitor/process-management/cci-status-template.md`
+- `signal-monitor/process-management/default-settings.json`
+
+要求：点击 `act:proc.cci.detail` 时，默认按上述 CCI 模板格式输出。
+
+---
+

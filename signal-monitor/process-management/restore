@@ -1,0 +1,13 @@
+# restore - 进程管理 (signal-monitor/process-management)
+
+用途：恢复“信号监控 -> 进程管理”页面与 CCI 详情展示模板。
+
+## 恢复顺序
+1. 恢复进程管理菜单按钮：`proc.cci.detail` / `proc.tg.detail` / `proc.all.status`
+2. 读取 `cci-status-template.md` 作为 CCI 展示模板
+3. 使用 `default-settings.json` 作为默认展示参数
+
+## 默认要求
+- 每次点击 `proc.cci.detail` 使用模板输出
+- 标题固定：`✅ CCI 监控系统运行正常！`
+- 包含系统状态、最近检测记录、当前CCI、检测频率状态、watchdog 结尾说明
