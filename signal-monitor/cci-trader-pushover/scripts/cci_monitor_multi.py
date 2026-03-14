@@ -3,7 +3,7 @@
 CCI 多周期监控系统 - 不同周期不同频率
 15m: 每30秒
 1h: 每3分钟
-4h: 每15分钟
+4h: 每5分钟
 1d: 每10分钟
 """
 
@@ -133,9 +133,9 @@ def should_send_alert(token_name, bar, alert_tag="default"):
         '15m': 15 * 60,      # 15分钟
         '1h': 50 * 60,       # 50分钟
         '4h': 3 * 60 * 60,   # 3小时（主阈值 ±180）
-        '4h_soft130': 1 * 60 * 60,   # 1小时（4h 软阈值 <-130）
-        '4h_soft135': 15 * 60,       # 15分钟（4h 软阈值 <-135）
-        '4h_soft140': 15 * 60,       # 15分钟（4h 软阈值 <-140）
+        '4h_soft130': 3 * 60 * 60,   # 3小时（4h 软阈值 <-130）
+        '4h_soft135': 3 * 60 * 60,  # 3小时（4h 软阈值 <-135）
+        '4h_soft140': 3 * 60 * 60,  # 3小时（4h 软阈值 <-140）
         '1d': 23 * 60 * 60   # 23小时
     }
 
@@ -222,7 +222,7 @@ def check_cci_threshold(token_name, token_address, bar, df_with_cci):
             f"⚠️ CCI: {cci:.2f} (4h 弱超卖 < -140)\n"
             f"价格: {price:.6f}\n\n"
             f"策略: 强观察区，注意风险放大\n"
-            f"冷却: 15分钟\n\n"
+            f"冷却: 3小时\n\n"
             f"📈 查看图表: {chart_link}"
         )
         if send_pushover_message(title, message, priority=1, retry=30, expire=1800):
@@ -241,7 +241,7 @@ def check_cci_threshold(token_name, token_address, bar, df_with_cci):
             f"⚠️ CCI: {cci:.2f} (4h 弱超卖 < -135)\n"
             f"价格: {price:.6f}\n\n"
             f"策略: 观察区，注意下行延续\n"
-            f"冷却: 15分钟\n\n"
+            f"冷却: 3小时\n\n"
             f"📈 查看图表: {chart_link}"
         )
         if send_pushover_message(title, message, priority=1, retry=30, expire=1800):
@@ -279,7 +279,7 @@ def should_check_bar(bar_name, token_key):
     check_intervals_seconds = {
         '15m': 30,     # 每30秒
         '1h': 180,     # 每3分钟
-        '4h': 900,     # 每15分钟
+        '4h': 300,     # 每5分钟
         '1d': 600      # 每10分钟
     }
 
@@ -358,7 +358,7 @@ def main_loop():
     
     log_message("=" * 60)
     log_message("🤖 CCI 多频率监控系统启动")
-    log_message("检测频率: 15m=30s, 1h=3min, 4h=15min, 1d=10min")
+    log_message("检测频率: 15m=30s, 1h=3min, 4h=5min, 1d=10min")
     log_message("=" * 60)
     
     while True:
