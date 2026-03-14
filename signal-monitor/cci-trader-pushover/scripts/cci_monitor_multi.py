@@ -133,7 +133,9 @@ def should_send_alert(token_name, bar, alert_tag="default"):
         '15m': 15 * 60,      # 15分钟
         '1h': 50 * 60,       # 50分钟
         '4h': 3 * 60 * 60,   # 3小时（主阈值 ±180）
-        '4h_soft': 1 * 60 * 60,  # 1小时（4h 软阈值 <-130）
+        '4h_soft130': 1 * 60 * 60,   # 1小时（4h 软阈值 <-130）
+        '4h_soft135': 15 * 60,       # 15分钟（4h 软阈值 <-135）
+        '4h_soft140': 15 * 60,       # 15分钟（4h 软阈值 <-140）
         '1d': 23 * 60 * 60   # 23小时
     }
 
@@ -208,9 +210,48 @@ def check_cci_threshold(token_name, token_address, bar, df_with_cci):
             return True
         return False
 
-    # 新增规则：4h CCI < -130，15分钟检测，触发后休眠1小时
+    # 4h 软阈值规则（互不影响）
+    elif bar == '4h' and cci < -140:
+        if not should_send_alert(token_name, bar, alert_tag="soft140"):
+            return False
+        title = f"⚠️ 4h 弱超卖-2 [{bar}] - {token_name}"
+        message = (
+            f"代币: {token_name}\n"
+            f"周期: {bar}\n"
+            f"时间: {timestamp}\n\n"
+            f"⚠️ CCI: {cci:.2f} (4h 弱超卖 < -140)\n"
+            f"价格: {price:.6f}\n\n"
+            f"策略: 强观察区，注意风险放大\n"
+            f"冷却: 15分钟\n\n"
+            f"📈 查看图表: {chart_link}"
+        )
+        if send_pushover_message(title, message, priority=1, retry=30, expire=1800):
+            mark_alert_sent(token_name, bar, alert_tag="soft140")
+            return True
+        return False
+
+    elif bar == '4h' and cci < -135:
+        if not should_send_alert(token_name, bar, alert_tag="soft135"):
+            return False
+        title = f"⚠️ 4h 弱超卖-1 [{bar}] - {token_name}"
+        message = (
+            f"代币: {token_name}\n"
+            f"周期: {bar}\n"
+            f"时间: {timestamp}\n\n"
+            f"⚠️ CCI: {cci:.2f} (4h 弱超卖 < -135)\n"
+            f"价格: {price:.6f}\n\n"
+            f"策略: 观察区，注意下行延续\n"
+            f"冷却: 15分钟\n\n"
+            f"📈 查看图表: {chart_link}"
+        )
+        if send_pushover_message(title, message, priority=1, retry=30, expire=1800):
+            mark_alert_sent(token_name, bar, alert_tag="soft135")
+            return True
+        return False
+
+    # 4h CCI < -130：保留1小时冷却，不影响 -135/-140 规则
     elif bar == '4h' and cci < -130:
-        if not should_send_alert(token_name, bar, alert_tag="soft"):
+        if not should_send_alert(token_name, bar, alert_tag="soft130"):
             return False
         title = f"⚠️ 4h 弱超卖 [{bar}] - {token_name}"
         message = (
@@ -224,7 +265,7 @@ def check_cci_threshold(token_name, token_address, bar, df_with_cci):
             f"📈 查看图表: {chart_link}"
         )
         if send_pushover_message(title, message, priority=1, retry=30, expire=1800):
-            mark_alert_sent(token_name, bar, alert_tag="soft")
+            mark_alert_sent(token_name, bar, alert_tag="soft130")
             return True
         return False
 
