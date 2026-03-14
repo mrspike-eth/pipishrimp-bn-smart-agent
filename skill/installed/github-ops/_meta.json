@@ -1,0 +1,10 @@
+{
+  "name": "github-ops",
+  "version": "1.0.0",
+  "description": "安全的 GitHub 操作技能 - 用户确认、安全 Token 处理、透明权限",
+  "author": "optimized",
+  "requires": {
+    "bins": ["git", "gh"],
+    "env": ["GITHUB_TOKEN"]
+  }
+}

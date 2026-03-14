@@ -1,0 +1,10 @@
+{
+  "name": "cci-trader-pushover",
+  "version": "1.0.0",
+  "description": "CCI 技术指标交易系统 - 多周期监控 + Pushover 推送",
+  "author": "wali",
+  "requires": {
+    "bins": ["python3", "pip3"],
+    "env": ["PUSHOVER_APP_TOKEN", "PUSHOVER_USER_KEY"]
+  }
+}

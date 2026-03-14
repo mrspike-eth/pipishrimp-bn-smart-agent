@@ -1,0 +1,10 @@
+{
+  "name": "twitter-daily",
+  "version": "1.0.0",
+  "description": "推特日报生成工具 - 使用 apidance.pro API，OpenClaw AI 总结",
+  "author": "wali",
+  "requires": {
+    "bins": ["python3"],
+    "env": ["TWITTER_API_KEY"]
+  }
+}
