@@ -27,7 +27,15 @@ bash scripts/restore_from_reset.sh
 
 ---
 
-## C. 手动流程（脚本不可用时）
+## C. GitHub 默认同步目标（重要）
+
+- 默认私人仓库：`mrspike-eth/pipishrimp-bn-smart-agent`
+- 以后凡是“更新到私人 GitHub 库/默认上传仓库”的请求，如无特别说明，一律推送到该仓库 `main` 分支。
+- 若用户明确指定其它仓库，以用户指令为准。
+
+---
+
+## D. 手动流程（脚本不可用时）
 
 ### Step-1（必须先做）：从 settings 开始恢复菜单
 
@@ -86,7 +94,7 @@ bash scripts/restore_from_reset.sh
 
 ---
 
-## D. 验收输出模板（固定）
+## E. 验收输出模板（固定）
 
 ```text
 恢复报告：
