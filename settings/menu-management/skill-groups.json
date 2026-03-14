@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "groups": {
+    "通用技能": [
+      "baoyu-post-to-wechat",
+      "find-skills",
+      "skill-vetter",
+      "summarize",
+      "openclaw-contrib-helper"
+    ],
+    "币安技能": [
+      "crypto-market-rank",
+      "spot",
+      "square-post",
+      "trading-signal",
+      "bnbchain-mcp",
+      "meme-rush",
+      "query-address-info",
+      "query-token-audit",
+      "query-token-info"
+    ],
+    "自定义技能": [
+      "cci-trader-pushover",
+      "twitter-daily",
+      "github-ops",
+      "telegram-MTProto-to-pushover",
+      "binance-activity-daily",
+      "binance-square-daily"
+    ],
+    "6551技能": [
+      "opennews-mcp",
+      "opentwitter-mcp"
+    ]
+  }
+}

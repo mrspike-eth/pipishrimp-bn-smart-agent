@@ -1,0 +1,35 @@
+{
+  "folder": "binance-daily",
+  "nodeId": "daily",
+  "rootEntry": {
+    "text": "📊 币安日报",
+    "next": "daily"
+  },
+  "node": {
+    "title": "币安日报",
+    "rows": [
+      [
+        {
+          "text": "🟨 币安广场日报",
+          "action": "daily.square"
+        },
+        {
+          "text": "🟦 币安活动日报",
+          "action": "daily.activity"
+        }
+      ],
+      [
+        {
+          "text": "🟪 推特日报",
+          "action": "daily.twitter"
+        }
+      ],
+      [
+        {
+          "text": "⬅️ 返回主菜单",
+          "next": "main"
+        }
+      ]
+    ]
+  }
+}

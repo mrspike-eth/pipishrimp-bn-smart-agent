@@ -1,0 +1,39 @@
+{
+  "folder": "bn-wallet-onchain-trade",
+  "nodeId": "onchain_trade",
+  "rootEntry": {
+    "text": "⛓️ BN Wallet链上交易",
+    "next": "onchain_trade"
+  },
+  "node": {
+    "title": "BN Wallet链上交易",
+    "rows": [
+      [
+        {
+          "text": "热门币查询",
+          "action": "onchain.hot.tokens"
+        },
+        {
+          "text": "安全审计",
+          "action": "onchain.audit"
+        }
+      ],
+      [
+        {
+          "text": "地址持仓",
+          "action": "onchain.address.info"
+        },
+        {
+          "text": "交易信号",
+          "action": "onchain.signal"
+        }
+      ],
+      [
+        {
+          "text": "⬅️ 返回主菜单",
+          "next": "main"
+        }
+      ]
+    ]
+  }
+}

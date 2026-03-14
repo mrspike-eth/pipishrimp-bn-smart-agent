@@ -1,0 +1,169 @@
+{
+  "cci": {
+    "title": "CCI 监控",
+    "rows": [
+      [
+        {
+          "text": "查看状态",
+          "action": "cci.status"
+        },
+        {
+          "text": "启动",
+          "action": "cci.start"
+        }
+      ],
+      [
+        {
+          "text": "停止",
+          "action": "cci.stop"
+        },
+        {
+          "text": "最近日志",
+          "action": "cci.logs.tail"
+        }
+      ],
+      [
+        {
+          "text": "⬅️ 返回信息监控",
+          "next": "monitor"
+        }
+      ]
+    ]
+  },
+  "telegram": {
+    "title": "Telegram 监控",
+    "rows": [
+      [
+        {
+          "text": "查看状态",
+          "action": "tg.status"
+        },
+        {
+          "text": "手动启动",
+          "action": "tg.start.manual"
+        }
+      ],
+      [
+        {
+          "text": "后台启动",
+          "action": "tg.start.bg"
+        },
+        {
+          "text": "停止",
+          "action": "tg.stop"
+        }
+      ],
+      [
+        {
+          "text": "⬅️ 返回信息监控",
+          "next": "monitor"
+        }
+      ]
+    ]
+  },
+  "smart_money_monitor": {
+    "title": "币安聪明钱监控",
+    "rows": [
+      [
+        {
+          "text": "查看状态",
+          "action": "smart.status"
+        },
+        {
+          "text": "启动监控",
+          "action": "smart.start"
+        }
+      ],
+      [
+        {
+          "text": "停止监控",
+          "action": "smart.stop"
+        },
+        {
+          "text": "最近日志",
+          "action": "smart.logs.tail"
+        }
+      ],
+      [
+        {
+          "text": "参数配置",
+          "next": "smart_money_config"
+        }
+      ],
+      [
+        {
+          "text": "⬅️ 返回信号监控",
+          "next": "monitor"
+        }
+      ]
+    ]
+  },
+  "smart_money_config": {
+    "title": "trading-signal 参数配置",
+    "rows": [
+      [
+        {
+          "text": "链选择: Solana(CT_501)",
+          "action": "smart.cfg.chain.sol"
+        },
+        {
+          "text": "链选择: BSC(56)",
+          "action": "smart.cfg.chain.bsc"
+        }
+      ],
+      [
+        {
+          "text": "轮询频率: 60秒",
+          "action": "smart.cfg.interval.60"
+        },
+        {
+          "text": "轮询频率: 30秒",
+          "action": "smart.cfg.interval.30"
+        }
+      ],
+      [
+        {
+          "text": "pageSize: 50",
+          "action": "smart.cfg.page.50"
+        },
+        {
+          "text": "pageSize: 100",
+          "action": "smart.cfg.page.100"
+        }
+      ],
+      [
+        {
+          "text": "⬅️ 返回聪明钱监控",
+          "next": "smart_money_monitor"
+        }
+      ]
+    ]
+  },
+  "process": {
+    "title": "进程管理",
+    "rows": [
+      [
+        {
+          "text": "CCI 进程详情",
+          "action": "proc.cci.detail"
+        },
+        {
+          "text": "TG 进程详情",
+          "action": "proc.tg.detail"
+        }
+      ],
+      [
+        {
+          "text": "全部状态",
+          "action": "proc.all.status"
+        }
+      ],
+      [
+        {
+          "text": "⬅️ 返回信息监控",
+          "next": "monitor"
+        }
+      ]
+    ]
+  }
+}

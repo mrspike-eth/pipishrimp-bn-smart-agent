@@ -1,0 +1,603 @@
+{
+  "version": "v2",
+  "root": {
+    "id": "main",
+    "title": "皮皮虾智能投资助手",
+    "rows": [
+      [
+        {
+          "text": "📊 币安日报",
+          "next": "daily"
+        },
+        {
+          "text": "⭐ 币种自选列表",
+          "next": "watchlist"
+        }
+      ],
+      [
+        {
+          "text": "💱 币安现货交易",
+          "next": "spot_trade"
+        },
+        {
+          "text": "⛓️ BN Wallet链上交易",
+          "next": "onchain_trade"
+        }
+      ],
+      [
+        {
+          "text": "📡 信号监控",
+          "next": "monitor"
+        },
+        {
+          "text": "🤖 智能投资助理",
+          "next": "invest_assistant"
+        }
+      ],
+      [
+        {
+          "text": "✍️ 内容创作",
+          "next": "content_create"
+        },
+        {
+          "text": "📚 学习模式",
+          "next": "learning_mode"
+        }
+      ],
+      [
+        {
+          "text": "🧩 Skill技能管理",
+          "next": "skill_mgmt"
+        },
+        {
+          "text": "⚙️ 设置",
+          "next": "settings"
+        }
+      ]
+    ]
+  },
+  "nodes": {
+    "daily": {
+      "title": "币安日报",
+      "rows": [
+        [
+          {
+            "text": "🟨 币安广场日报",
+            "action": "daily.square"
+          },
+          {
+            "text": "🟦 币安活动日报",
+            "action": "daily.activity"
+          }
+        ],
+        [
+          {
+            "text": "🟪 推特日报",
+            "action": "daily.twitter"
+          }
+        ],
+        [
+          {
+            "text": "⬅️ 返回主菜单",
+            "next": "main"
+          }
+        ]
+      ]
+    },
+    "monitor": {
+      "title": "信号监控",
+      "rows": [
+        [
+          {
+            "text": "📈 CCI监控",
+            "next": "cci"
+          },
+          {
+            "text": "📱 Telegram监控",
+            "next": "telegram"
+          }
+        ],
+        [
+          {
+            "text": "🧠 币安聪明钱监控",
+            "next": "smart_money_monitor"
+          },
+          {
+            "text": "🧰 进程管理",
+            "next": "process"
+          }
+        ],
+        [
+          {
+            "text": "⬅️ 返回主菜单",
+            "next": "main"
+          }
+        ]
+      ]
+    },
+    "watchlist": {
+      "title": "币种自选列表",
+      "rows": [
+        [
+          {
+            "text": "查看自选列表",
+            "action": "watchlist.show"
+          },
+          {
+            "text": "添加币种",
+            "action": "watchlist.add"
+          }
+        ],
+        [
+          {
+            "text": "删除币种",
+            "action": "watchlist.remove"
+          },
+          {
+            "text": "清空列表",
+            "action": "watchlist.clear"
+          }
+        ],
+        [
+          {
+            "text": "⬅️ 返回主菜单",
+            "next": "main"
+          }
+        ]
+      ]
+    },
+    "spot_trade": {
+      "title": "币安现货交易",
+      "rows": [
+        [
+          {
+            "text": "账户状态",
+            "action": "spot.account"
+          },
+          {
+            "text": "下单测试",
+            "action": "spot.order.test"
+          }
+        ],
+        [
+          {
+            "text": "一键冒烟测试",
+            "action": "spot.smoke.testnet"
+          },
+          {
+            "text": "开放订单",
+            "action": "spot.open.orders"
+          }
+        ],
+        [
+          {
+            "text": "⬅️ 返回主菜单",
+            "next": "main"
+          }
+        ]
+      ]
+    },
+    "onchain_trade": {
+      "title": "BN Wallet链上交易",
+      "rows": [
+        [
+          {
+            "text": "热门币查询",
+            "action": "onchain.hot.tokens"
+          },
+          {
+            "text": "安全审计",
+            "action": "onchain.audit"
+          }
+        ],
+        [
+          {
+            "text": "地址持仓",
+            "action": "onchain.address.info"
+          },
+          {
+            "text": "交易信号",
+            "action": "onchain.signal"
+          }
+        ],
+        [
+          {
+            "text": "⬅️ 返回主菜单",
+            "next": "main"
+          }
+        ]
+      ]
+    },
+    "invest_assistant": {
+      "title": "智能投资助理",
+      "rows": [
+        [
+          {
+            "text": "市场概览",
+            "action": "invest.market.overview"
+          },
+          {
+            "text": "策略建议",
+            "action": "invest.strategy.suggest"
+          }
+        ],
+        [
+          {
+            "text": "风险诊断",
+            "action": "invest.risk.check"
+          }
+        ],
+        [
+          {
+            "text": "⬅️ 返回主菜单",
+            "next": "main"
+          }
+        ]
+      ]
+    },
+    "learning_mode": {
+      "title": "学习模式",
+      "rows": [
+        [
+          {
+            "text": "今日学习清单",
+            "action": "learn.today.list"
+          },
+          {
+            "text": "主题学习计划",
+            "action": "learn.topic.plan"
+          }
+        ],
+        [
+          {
+            "text": "术语卡片",
+            "action": "learn.term.cards"
+          }
+        ],
+        [
+          {
+            "text": "⬅️ 返回主菜单",
+            "next": "main"
+          }
+        ]
+      ]
+    },
+    "content_create": {
+      "title": "内容创作",
+      "rows": [
+        [
+          {
+            "text": "公众号文章",
+            "action": "content.wechat.article"
+          },
+          {
+            "text": "Binance Square发帖",
+            "action": "content.square.post"
+          }
+        ],
+        [
+          {
+            "text": "日报摘要生成",
+            "action": "content.daily.summary"
+          }
+        ],
+        [
+          {
+            "text": "⬅️ 返回主菜单",
+            "next": "main"
+          }
+        ]
+      ]
+    },
+    "settings": {
+      "title": "设置",
+      "rows": [
+        [
+          {
+            "text": "⚙️ GitHub操作",
+            "next": "github"
+          },
+          {
+            "text": "🗂️ 菜单管理",
+            "next": "menu_mgmt"
+          }
+        ],
+        [
+          {
+            "text": "⬅️ 返回主菜单",
+            "next": "main"
+          }
+        ]
+      ]
+    },
+    "cci": {
+      "title": "CCI 监控",
+      "rows": [
+        [
+          {
+            "text": "查看状态",
+            "action": "cci.status"
+          },
+          {
+            "text": "启动",
+            "action": "cci.start"
+          }
+        ],
+        [
+          {
+            "text": "停止",
+            "action": "cci.stop"
+          },
+          {
+            "text": "最近日志",
+            "action": "cci.logs.tail"
+          }
+        ],
+        [
+          {
+            "text": "⬅️ 返回信息监控",
+            "next": "monitor"
+          }
+        ]
+      ]
+    },
+    "telegram": {
+      "title": "Telegram 监控",
+      "rows": [
+        [
+          {
+            "text": "查看状态",
+            "action": "tg.status"
+          },
+          {
+            "text": "手动启动",
+            "action": "tg.start.manual"
+          }
+        ],
+        [
+          {
+            "text": "后台启动",
+            "action": "tg.start.bg"
+          },
+          {
+            "text": "停止",
+            "action": "tg.stop"
+          }
+        ],
+        [
+          {
+            "text": "⬅️ 返回信息监控",
+            "next": "monitor"
+          }
+        ]
+      ]
+    },
+    "github": {
+      "title": "GitHub 操作",
+      "rows": [
+        [
+          {
+            "text": "仓库状态",
+            "action": "gh.status"
+          },
+          {
+            "text": "推送代码",
+            "action": "gh.push"
+          }
+        ],
+        [
+          {
+            "text": "创建发布",
+            "action": "gh.release"
+          }
+        ],
+        [
+          {
+            "text": "⬅️ 返回设置",
+            "next": "settings"
+          }
+        ]
+      ]
+    },
+    "smart_money_monitor": {
+      "title": "币安聪明钱监控",
+      "rows": [
+        [
+          {
+            "text": "查看状态",
+            "action": "smart.status"
+          },
+          {
+            "text": "启动监控",
+            "action": "smart.start"
+          }
+        ],
+        [
+          {
+            "text": "停止监控",
+            "action": "smart.stop"
+          },
+          {
+            "text": "最近日志",
+            "action": "smart.logs.tail"
+          }
+        ],
+        [
+          {
+            "text": "参数配置",
+            "next": "smart_money_config"
+          }
+        ],
+        [
+          {
+            "text": "⬅️ 返回信号监控",
+            "next": "monitor"
+          }
+        ]
+      ]
+    },
+    "smart_money_config": {
+      "title": "trading-signal 参数配置",
+      "rows": [
+        [
+          {
+            "text": "链选择: Solana(CT_501)",
+            "action": "smart.cfg.chain.sol"
+          },
+          {
+            "text": "链选择: BSC(56)",
+            "action": "smart.cfg.chain.bsc"
+          }
+        ],
+        [
+          {
+            "text": "轮询频率: 60秒",
+            "action": "smart.cfg.interval.60"
+          },
+          {
+            "text": "轮询频率: 30秒",
+            "action": "smart.cfg.interval.30"
+          }
+        ],
+        [
+          {
+            "text": "pageSize: 50",
+            "action": "smart.cfg.page.50"
+          },
+          {
+            "text": "pageSize: 100",
+            "action": "smart.cfg.page.100"
+          }
+        ],
+        [
+          {
+            "text": "⬅️ 返回聪明钱监控",
+            "next": "smart_money_monitor"
+          }
+        ]
+      ]
+    },
+    "process": {
+      "title": "进程管理",
+      "rows": [
+        [
+          {
+            "text": "CCI 进程详情",
+            "action": "proc.cci.detail"
+          },
+          {
+            "text": "TG 进程详情",
+            "action": "proc.tg.detail"
+          }
+        ],
+        [
+          {
+            "text": "全部状态",
+            "action": "proc.all.status"
+          }
+        ],
+        [
+          {
+            "text": "⬅️ 返回信息监控",
+            "next": "monitor"
+          }
+        ]
+      ]
+    },
+    "skill_mgmt": {
+      "title": "Skill技能管理",
+      "rows": [
+        [
+          {
+            "text": "查看已安装技能(分组)",
+            "action": "skill.list"
+          },
+          {
+            "text": "搜索新技能",
+            "action": "skill.search"
+          }
+        ],
+        [
+          {
+            "text": "安装技能",
+            "action": "skill.install"
+          },
+          {
+            "text": "更新技能",
+            "action": "skill.update"
+          }
+        ],
+        [
+          {
+            "text": "🗂️ 分组管理",
+            "next": "skill_group_mgmt"
+          }
+        ],
+        [
+          {
+            "text": "⬅️ 返回主菜单",
+            "next": "main"
+          }
+        ]
+      ]
+    },
+    "skill_group_mgmt": {
+      "title": "Skill分组管理",
+      "rows": [
+        [
+          {
+            "text": "查看分组",
+            "action": "skill.group.list"
+          },
+          {
+            "text": "创建分组",
+            "action": "skill.group.create"
+          }
+        ],
+        [
+          {
+            "text": "分组添加技能",
+            "action": "skill.group.add"
+          },
+          {
+            "text": "分组移除技能",
+            "action": "skill.group.remove"
+          }
+        ],
+        [
+          {
+            "text": "⬅️ 返回Skill管理",
+            "next": "skill_mgmt"
+          }
+        ]
+      ]
+    },
+    "menu_mgmt": {
+      "title": "菜单管理",
+      "rows": [
+        [
+          {
+            "text": "查看菜单JSON",
+            "action": "menu.show.json"
+          },
+          {
+            "text": "查看回调映射",
+            "action": "menu.show.actions"
+          }
+        ],
+        [
+          {
+            "text": "导出按钮草案",
+            "action": "menu.export.telegram"
+          }
+        ],
+        [
+          {
+            "text": "⬅️ 返回主菜单",
+            "next": "main"
+          }
+        ]
+      ]
+    }
+  }
+}

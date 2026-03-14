@@ -1,0 +1,45 @@
+{
+  "folder": "skill-management",
+  "nodeId": "skill_mgmt",
+  "rootEntry": {
+    "text": "🧩 Skill技能管理",
+    "next": "skill_mgmt"
+  },
+  "node": {
+    "title": "Skill技能管理",
+    "rows": [
+      [
+        {
+          "text": "查看已安装技能(分组)",
+          "action": "skill.list"
+        },
+        {
+          "text": "搜索新技能",
+          "action": "skill.search"
+        }
+      ],
+      [
+        {
+          "text": "安装技能",
+          "action": "skill.install"
+        },
+        {
+          "text": "更新技能",
+          "action": "skill.update"
+        }
+      ],
+      [
+        {
+          "text": "🗂️ 分组管理",
+          "next": "skill_group_mgmt"
+        }
+      ],
+      [
+        {
+          "text": "⬅️ 返回主菜单",
+          "next": "main"
+        }
+      ]
+    ]
+  }
+}

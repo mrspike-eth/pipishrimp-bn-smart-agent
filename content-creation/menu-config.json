@@ -1,0 +1,35 @@
+{
+  "folder": "content-creation",
+  "nodeId": "content_create",
+  "rootEntry": {
+    "text": "✍️ 内容创作",
+    "next": "content_create"
+  },
+  "node": {
+    "title": "内容创作",
+    "rows": [
+      [
+        {
+          "text": "公众号文章",
+          "action": "content.wechat.article"
+        },
+        {
+          "text": "Binance Square发帖",
+          "action": "content.square.post"
+        }
+      ],
+      [
+        {
+          "text": "日报摘要生成",
+          "action": "content.daily.summary"
+        }
+      ],
+      [
+        {
+          "text": "⬅️ 返回主菜单",
+          "next": "main"
+        }
+      ]
+    ]
+  }
+}

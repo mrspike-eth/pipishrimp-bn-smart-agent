@@ -1,0 +1,56 @@
+{
+  "github": {
+    "title": "GitHub 操作",
+    "rows": [
+      [
+        {
+          "text": "仓库状态",
+          "action": "gh.status"
+        },
+        {
+          "text": "推送代码",
+          "action": "gh.push"
+        }
+      ],
+      [
+        {
+          "text": "创建发布",
+          "action": "gh.release"
+        }
+      ],
+      [
+        {
+          "text": "⬅️ 返回设置",
+          "next": "settings"
+        }
+      ]
+    ]
+  },
+  "menu_mgmt": {
+    "title": "菜单管理",
+    "rows": [
+      [
+        {
+          "text": "查看菜单JSON",
+          "action": "menu.show.json"
+        },
+        {
+          "text": "查看回调映射",
+          "action": "menu.show.actions"
+        }
+      ],
+      [
+        {
+          "text": "导出按钮草案",
+          "action": "menu.export.telegram"
+        }
+      ],
+      [
+        {
+          "text": "⬅️ 返回主菜单",
+          "next": "main"
+        }
+      ]
+    ]
+  }
+}

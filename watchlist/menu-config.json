@@ -1,0 +1,39 @@
+{
+  "folder": "watchlist",
+  "nodeId": "watchlist",
+  "rootEntry": {
+    "text": "⭐ 币种自选列表",
+    "next": "watchlist"
+  },
+  "node": {
+    "title": "币种自选列表",
+    "rows": [
+      [
+        {
+          "text": "查看自选列表",
+          "action": "watchlist.show"
+        },
+        {
+          "text": "添加币种",
+          "action": "watchlist.add"
+        }
+      ],
+      [
+        {
+          "text": "删除币种",
+          "action": "watchlist.remove"
+        },
+        {
+          "text": "清空列表",
+          "action": "watchlist.clear"
+        }
+      ],
+      [
+        {
+          "text": "⬅️ 返回主菜单",
+          "next": "main"
+        }
+      ]
+    ]
+  }
+}

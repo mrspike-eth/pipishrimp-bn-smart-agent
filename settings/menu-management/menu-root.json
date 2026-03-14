@@ -1,0 +1,56 @@
+{
+  "id": "main",
+  "title": "皮皮虾智能投资助手",
+  "rows": [
+    [
+      {
+        "text": "📊 币安日报",
+        "next": "daily"
+      },
+      {
+        "text": "⭐ 币种自选列表",
+        "next": "watchlist"
+      }
+    ],
+    [
+      {
+        "text": "💱 币安现货交易",
+        "next": "spot_trade"
+      },
+      {
+        "text": "⛓️ BN Wallet链上交易",
+        "next": "onchain_trade"
+      }
+    ],
+    [
+      {
+        "text": "📡 信号监控",
+        "next": "monitor"
+      },
+      {
+        "text": "🤖 智能投资助理",
+        "next": "invest_assistant"
+      }
+    ],
+    [
+      {
+        "text": "✍️ 内容创作",
+        "next": "content_create"
+      },
+      {
+        "text": "📚 学习模式",
+        "next": "learning_mode"
+      }
+    ],
+    [
+      {
+        "text": "🧩 Skill技能管理",
+        "next": "skill_mgmt"
+      },
+      {
+        "text": "⚙️ 设置",
+        "next": "settings"
+      }
+    ]
+  ]
+}

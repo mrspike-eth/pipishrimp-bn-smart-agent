@@ -1,0 +1,33 @@
+{
+  "skill_group_mgmt": {
+    "title": "Skill分组管理",
+    "rows": [
+      [
+        {
+          "text": "查看分组",
+          "action": "skill.group.list"
+        },
+        {
+          "text": "创建分组",
+          "action": "skill.group.create"
+        }
+      ],
+      [
+        {
+          "text": "分组添加技能",
+          "action": "skill.group.add"
+        },
+        {
+          "text": "分组移除技能",
+          "action": "skill.group.remove"
+        }
+      ],
+      [
+        {
+          "text": "⬅️ 返回Skill管理",
+          "next": "skill_mgmt"
+        }
+      ]
+    ]
+  }
+}

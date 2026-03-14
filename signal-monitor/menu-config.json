@@ -1,0 +1,39 @@
+{
+  "folder": "signal-monitor",
+  "nodeId": "monitor",
+  "rootEntry": {
+    "text": "📡 信号监控",
+    "next": "monitor"
+  },
+  "node": {
+    "title": "信号监控",
+    "rows": [
+      [
+        {
+          "text": "📈 CCI监控",
+          "next": "cci"
+        },
+        {
+          "text": "📱 Telegram监控",
+          "next": "telegram"
+        }
+      ],
+      [
+        {
+          "text": "🧠 币安聪明钱监控",
+          "next": "smart_money_monitor"
+        },
+        {
+          "text": "🧰 进程管理",
+          "next": "process"
+        }
+      ],
+      [
+        {
+          "text": "⬅️ 返回主菜单",
+          "next": "main"
+        }
+      ]
+    ]
+  }
+}

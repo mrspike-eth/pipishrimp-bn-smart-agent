@@ -1,0 +1,29 @@
+{
+  "folder": "settings",
+  "nodeId": "settings",
+  "rootEntry": {
+    "text": "⚙️ 设置",
+    "next": "settings"
+  },
+  "node": {
+    "title": "设置",
+    "rows": [
+      [
+        {
+          "text": "⚙️ GitHub操作",
+          "next": "github"
+        },
+        {
+          "text": "🗂️ 菜单管理",
+          "next": "menu_mgmt"
+        }
+      ],
+      [
+        {
+          "text": "⬅️ 返回主菜单",
+          "next": "main"
+        }
+      ]
+    ]
+  }
+}

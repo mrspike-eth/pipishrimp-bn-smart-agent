@@ -1,0 +1,39 @@
+{
+  "folder": "binance-spot-trade",
+  "nodeId": "spot_trade",
+  "rootEntry": {
+    "text": "💱 币安现货交易",
+    "next": "spot_trade"
+  },
+  "node": {
+    "title": "币安现货交易",
+    "rows": [
+      [
+        {
+          "text": "账户状态",
+          "action": "spot.account"
+        },
+        {
+          "text": "下单测试",
+          "action": "spot.order.test"
+        }
+      ],
+      [
+        {
+          "text": "一键冒烟测试",
+          "action": "spot.smoke.testnet"
+        },
+        {
+          "text": "开放订单",
+          "action": "spot.open.orders"
+        }
+      ],
+      [
+        {
+          "text": "⬅️ 返回主菜单",
+          "next": "main"
+        }
+      ]
+    ]
+  }
+}

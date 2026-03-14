@@ -1,0 +1,111 @@
+{
+  "skill-list-panel": {
+    "layout": "grouped-vertical",
+    "title": "🧩 已安装技能（分组纵向聚合）",
+    "description": "每个分组内技能按纵向连续排列，不跨组混排。",
+    "groups": [
+      {
+        "name": "通用技能",
+        "skills": [
+          "find-skills",
+          "summarize",
+          "skill-vetter",
+          "openclaw-contrib-helper",
+          "baoyu-post-to-wechat"
+        ]
+      },
+      {
+        "name": "币安技能",
+        "skills": [
+          "spot",
+          "trading-signal",
+          "crypto-market-rank",
+          "bnbchain-mcp",
+          "meme-rush",
+          "square-post",
+          "query-address-info",
+          "query-token-audit",
+          "query-token-info"
+        ]
+      },
+      {
+        "name": "6551技能",
+        "skills": [
+          "opennews-mcp",
+          "opentwitter-mcp"
+        ]
+      },
+      {
+        "name": "自定义技能",
+        "skills": [
+          "cci-trader-pushover",
+          "telegram-MTProto-to-pushover",
+          "twitter-daily",
+          "github-ops",
+          "binance-activity-daily",
+          "binance-square-daily"
+        ]
+      }
+    ]
+  },
+  "skill-groups": {
+    "version": 1,
+    "groups": {
+      "通用技能": [
+        "baoyu-post-to-wechat",
+        "find-skills",
+        "skill-vetter",
+        "summarize",
+        "openclaw-contrib-helper"
+      ],
+      "币安技能": [
+        "crypto-market-rank",
+        "spot",
+        "square-post",
+        "trading-signal",
+        "bnbchain-mcp",
+        "meme-rush",
+        "query-address-info",
+        "query-token-audit",
+        "query-token-info"
+      ],
+      "自定义技能": [
+        "cci-trader-pushover",
+        "twitter-daily",
+        "github-ops",
+        "telegram-MTProto-to-pushover",
+        "binance-activity-daily",
+        "binance-square-daily"
+      ],
+      "6551技能": [
+        "opennews-mcp",
+        "opentwitter-mcp"
+      ]
+    }
+  },
+  "skill-catalog-zh": {
+    "spot": "币安现货 API 调用与测试网/主网切换",
+    "trading-signal": "智能资金链上交易信号订阅与跟踪",
+    "crypto-market-rank": "币圈热度榜单与资金关注度排行",
+    "bnbchain-mcp": "BNB Chain 链上查询与交互能力",
+    "meme-rush": "Meme 币热点与快节奏机会追踪",
+    "query-address-info": "查询地址持仓与资产结构",
+    "query-token-audit": "代币安全审计与风险检测",
+    "query-token-info": "代币信息、行情与K线查询",
+    "binance-activity-daily": "币安公告资讯日报（24h 汇总）",
+    "binance-square-daily": "币安广场内容日报生成",
+    "square-post": "发布内容到 Binance Square",
+    "opennews-mcp": "6551 新闻检索、评分与快讯",
+    "opentwitter-mcp": "6551 推文检索与账号动态",
+    "cci-trader-pushover": "CCI 多周期监控与告警推送",
+    "twitter-daily": "推特监控与日报摘要",
+    "github-ops": "GitHub 仓库操作与自动化流程",
+    "telegram-MTProto-to-pushover": "Telegram 频道监控与推送",
+    "baoyu-post-to-wechat": "微信公众号文章/图文发布",
+    "find-skills": "发现并安装新技能",
+    "skill-vetter": "技能安全审查与质量检查",
+    "summarize": "文本摘要与信息压缩",
+    "openclaw-contrib-helper": "将修复自动走 fork+PR 贡献流程",
+    "wali-visual-menu-manager": "Wali 可视化菜单结构管理"
+  }
+}

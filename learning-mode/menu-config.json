@@ -1,0 +1,35 @@
+{
+  "folder": "learning-mode",
+  "nodeId": "learning_mode",
+  "rootEntry": {
+    "text": "📚 学习模式",
+    "next": "learning_mode"
+  },
+  "node": {
+    "title": "学习模式",
+    "rows": [
+      [
+        {
+          "text": "今日学习清单",
+          "action": "learn.today.list"
+        },
+        {
+          "text": "主题学习计划",
+          "action": "learn.topic.plan"
+        }
+      ],
+      [
+        {
+          "text": "术语卡片",
+          "action": "learn.term.cards"
+        }
+      ],
+      [
+        {
+          "text": "⬅️ 返回主菜单",
+          "next": "main"
+        }
+      ]
+    ]
+  }
+}
