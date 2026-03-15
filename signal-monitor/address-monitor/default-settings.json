@@ -7,5 +7,16 @@
   "period": "30d",
   "tag": "ALL",
   "pageNo": 1,
-  "pageSize": 10
+  "pageSize": 10,
+  "output_format": "per-address-top3-natural-language",
+  "template": "signal-monitor/address-monitor/address-pnl-top10-template.md",
+  "required_fields": [
+    "rank",
+    "label",
+    "win_rate",
+    "realized_pnl",
+    "address_short",
+    "top3_tokens"
+  ],
+  "empty_token_rule": "若不足3个币种，第三行显示“（该地址仅返回N个有效币种）”"
 }

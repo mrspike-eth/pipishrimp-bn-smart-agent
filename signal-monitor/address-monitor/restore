@@ -16,3 +16,16 @@
 - `nav:address_monitor` 可达
 - `cmr.address_pnl.top10` 返回10条地址排行
 - 不要求用户二次补参数
+
+
+## 固定输出格式（已确认）
+- 每个地址按以下格式输出：
+  `1) 名称（胜率：xx.xx%、Realized PnL：x,xxx.xx）`
+  `地址：xxxx...xxxx`
+  `收益前三币种：`
+  `• TokenA：value`
+  `• TokenB：value`
+  `• TokenC：value`
+- 若地址标签为空，名称显示“未命名”。
+- 地址显示短地址（前4~5位 + ... + 后4位）。
+- 该格式为默认且强制，除非用户另行指定。
