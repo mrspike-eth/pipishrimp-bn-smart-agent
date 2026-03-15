@@ -18,6 +18,7 @@
 
 ## 4) 固定规则（强制）
 - `nav:daily` 必须返回“三日报按钮版”，禁止纯文本兜底。
+- 每次 `nav:daily` 响应必须使用 Telegram 按钮（inline keyboard）渲染，不允许文本列表。
 - 固定按钮：
   1) `🟨 币安广场日报` → `act:daily.square`
   2) `🟦 币安活动日报` → `act:daily.activity`
