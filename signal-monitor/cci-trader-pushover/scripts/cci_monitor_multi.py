@@ -30,9 +30,11 @@ api_config = {
 }
 BASE_URL = "https://web3.okx.com"
 
-# Pushover 配置
+# Pushover 配置（支持多推送源）
 PUSHOVER_APP_TOKEN = os.getenv("PUSHOVER_APP_TOKEN")
 PUSHOVER_USER_KEY = os.getenv("PUSHOVER_USER_KEY")
+PUSHOVER_APP_TOKEN_2 = os.getenv("PUSHOVER_APP_TOKEN_2")
+PUSHOVER_USER_KEY_2 = os.getenv("PUSHOVER_USER_KEY_2")
 PUSHOVER_URL = "https://api.pushover.net/1/messages.json"
 
 # 日志
@@ -53,28 +55,36 @@ def log_message(msg):
     print(log_line.strip())
 
 def send_pushover_message(title, message, priority=2, retry=30, expire=3600):
-    if not PUSHOVER_APP_TOKEN or not PUSHOVER_USER_KEY:
+    targets = []
+    if PUSHOVER_APP_TOKEN and PUSHOVER_USER_KEY:
+        targets.append((PUSHOVER_APP_TOKEN, PUSHOVER_USER_KEY, "#1"))
+    if PUSHOVER_APP_TOKEN_2 and PUSHOVER_USER_KEY_2:
+        targets.append((PUSHOVER_APP_TOKEN_2, PUSHOVER_USER_KEY_2, "#2"))
+
+    if not targets:
         log_message("❌ Pushover 未配置")
         return False
-    
-    data = {
-        "token": PUSHOVER_APP_TOKEN,
-        "user": PUSHOVER_USER_KEY,
-        "title": title[:100],
-        "message": message[:500],
-        "priority": priority,
-        "retry": retry,
-        "expire": expire
-    }
-    
-    try:
-        response = requests.post(PUSHOVER_URL, data=data, timeout=10)
-        response.raise_for_status()
-        log_message(f"✅ Pushover 已发送: {title[:30]}... (优先级: {priority})")
-        return True
-    except Exception as e:
-        log_message(f"❌ Pushover 发送失败: {e}")
-        return False
+
+    ok_count = 0
+    for token, user, tag in targets:
+        data = {
+            "token": token,
+            "user": user,
+            "title": title[:100],
+            "message": message[:500],
+            "priority": priority,
+            "retry": retry,
+            "expire": expire
+        }
+        try:
+            response = requests.post(PUSHOVER_URL, data=data, timeout=10)
+            response.raise_for_status()
+            ok_count += 1
+            log_message(f"✅ Pushover{tag} 已发送: {title[:30]}... (优先级: {priority})")
+        except Exception as e:
+            log_message(f"❌ Pushover{tag} 发送失败: {e}")
+
+    return ok_count > 0
 
 def get_signature(method, request_path, body_str, secret_key):
     timestamp = datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
