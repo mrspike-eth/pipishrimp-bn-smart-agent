@@ -109,6 +109,10 @@
         ],
         [
           {
+            "text": "📍 地址监控",
+            "next": "address_monitor"
+          },
+          {
             "text": "🧰 进程管理",
             "next": "process"
           }
@@ -632,6 +636,23 @@
           {
             "text": "5) 交叉信号榜",
             "action": "cmr.cross_signal.top"
+          }
+        ],
+        [
+          {
+            "text": "⬅️ 返回信号监控",
+            "next": "monitor"
+          }
+        ]
+      ]
+    },
+    "address_monitor": {
+      "title": "地址监控",
+      "rows": [
+        [
+          {
+            "text": "🏆 币安高收益地址榜单",
+            "action": "cmr.address_pnl.top10"
           }
         ],
         [

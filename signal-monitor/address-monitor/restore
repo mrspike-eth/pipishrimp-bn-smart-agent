@@ -1,0 +1,18 @@
+# restore - 地址监控（signal-monitor/address-monitor）
+
+用途：恢复“信号监控 -> 地址监控 -> 币安高收益地址榜单”。
+
+## 固定行为
+- 二级入口：`📍 地址监控`（next=`address_monitor`）
+- 三级动作：`🏆 币安高收益地址榜单`（action=`cmr.address_pnl.top10`）
+- 点击后固定返回 Address PnL 榜前10（自然语言列表/表格均可，但必须是前10）。
+
+## 数据源
+- 技能：`crypto-market-rank`
+- API: Address PnL Rank
+- 默认参数：chainId=CT_501, period=30d, tag=ALL, pageNo=1, pageSize=10
+
+## 验收
+- `nav:address_monitor` 可达
+- `cmr.address_pnl.top10` 返回10条地址排行
+- 不要求用户二次补参数

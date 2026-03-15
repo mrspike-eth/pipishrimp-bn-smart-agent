@@ -1,0 +1,11 @@
+{
+  "trigger_callback": "nav:address_monitor",
+  "action_callback": "act:cmr.address_pnl.top10",
+  "output_mode": "fixed_top10",
+  "source_skill": "crypto-market-rank",
+  "chainId": "CT_501",
+  "period": "30d",
+  "tag": "ALL",
+  "pageNo": 1,
+  "pageSize": 10
+}

@@ -202,5 +202,22 @@
         }
       ]
     ]
+  },
+  "address_monitor": {
+    "title": "地址监控",
+    "rows": [
+      [
+        {
+          "text": "🏆 币安高收益地址榜单",
+          "action": "cmr.address_pnl.top10"
+        }
+      ],
+      [
+        {
+          "text": "⬅️ 返回信号监控",
+          "next": "monitor"
+        }
+      ]
+    ]
   }
 }
