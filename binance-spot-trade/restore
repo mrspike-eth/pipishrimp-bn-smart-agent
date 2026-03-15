@@ -19,4 +19,4 @@
 ## 4) 备注
 - 此文件仅定义恢复步骤，不保存运行时秘密。
 
-- `spot_trade` 二级菜单固定按钮：账户资产（spot.account.assets）｜仓位（spot.positions）｜交易（spot.trade）
+- `spot_trade` 二级菜单固定按钮：账户资产（spot.account.assets）｜仓位（spot.positions）｜交易（spot.trade）｜pnl收益统计（spot.pnl.summary）

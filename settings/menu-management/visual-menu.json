@@ -179,6 +179,10 @@
           {
             "text": "交易",
             "action": "spot.trade"
+          },
+          {
+            "text": "pnl收益统计",
+            "action": "spot.pnl.summary"
           }
         ],
         [
