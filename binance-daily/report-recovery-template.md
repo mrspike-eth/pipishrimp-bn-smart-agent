@@ -11,10 +11,11 @@
 
 ### A) 币安广场日报
 - 实现脚本：`skills/binance-square-daily/scripts/generate_daily.py`
-- 数据来源：Binance Square 热门列表
+- 主数据源：Binance Square 热门列表
+- 降级数据源：Binance Web3 Social Hype（当主源 404/失效时自动切换）
 - 输出文件：`binance_daily_YYYY-MM-DD.txt`
 - 日志：`binance_daily.log`
-- 输出格式：最近24小时热门文章 TOP10，含作者/点赞/浏览
+- 输出格式：最近24小时热门内容 TOP10，含作者/点赞/浏览
 
 ### B) 币安活动日报
 - 实现脚本：`skills/binance-activity-daily/scripts/generate_daily.py`
