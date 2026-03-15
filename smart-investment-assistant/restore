@@ -16,5 +16,24 @@
 - 回调可达、可继续跳转
 - 不出现临时占位回调
 
-## 4) 备注
+
+
+## 4) 三级菜单结构（强制）
+- 钱包地址分析（next=`invest_wallet_analysis`）
+  - 动作：`invest.wallet.analyze.prompt`
+  - 行为：先询问地址，再默认调用 `query-address-info` 输出报告
+- 币种合约分析（next=`invest_contract_analysis`）
+  - 动作：`invest.contract.analyze.prompt`
+  - 行为：先询问合约地址，再默认调用 `query-token-audit` + `query-token-info` 输出完整报告
+- AI智能投研（next=`invest_ai_research`）
+  - alpha投研（`invest.ai.alpha`）
+  - surf高级投研（`invest.ai.surf`）
+  - ai顾问（`invest.ai.advisor`）
+  - 个人投资框架（`invest.ai.framework`）
+
+## 5) 参考配置
+- `submenus.json`
+- `default-settings.json`
+
+## 6) 备注
 - 此文件仅定义恢复步骤，不保存运行时秘密。

@@ -41,9 +41,25 @@
       ],
       [
         {
-          "text": "🧠 币安聪明钱监控",
+          "text": "🧠 币安聪明钱信号监控",
           "next": "smart_money_monitor"
         },
+        {
+          "text": "📊 币安市场币种榜单",
+          "next": "market_rank"
+        }
+      ],
+      [
+        {
+          "text": "📍 地址监控",
+          "next": "address_monitor"
+        },
+        {
+          "text": "🪖 战壕监控",
+          "next": "trench_monitor"
+        }
+      ],
+      [
         {
           "text": "🧰 进程管理",
           "next": "process"
@@ -155,18 +171,18 @@
     "rows": [
       [
         {
-          "text": "市场概览",
-          "action": "invest.market.overview"
+          "text": "钱包地址分析",
+          "next": "invest_wallet_analysis"
         },
         {
-          "text": "策略建议",
-          "action": "invest.strategy.suggest"
+          "text": "币种合约分析",
+          "next": "invest_contract_analysis"
         }
       ],
       [
         {
-          "text": "风险诊断",
-          "action": "invest.risk.check"
+          "text": "AI智能投研",
+          "next": "invest_ai_research"
         }
       ],
       [
@@ -537,6 +553,146 @@
         {
           "text": "⬅️ 返回主菜单",
           "next": "main"
+        }
+      ]
+    ]
+  },
+  "market_rank": {
+    "title": "币安市场币种榜单",
+    "rows": [
+      [
+        {
+          "text": "1) 社交热度榜(前5)",
+          "action": "cmr.social_hype.top5"
+        },
+        {
+          "text": "2) 统一代币榜(前5)",
+          "action": "cmr.unified.top5"
+        }
+      ],
+      [
+        {
+          "text": "3) 聪明钱净流入榜(前5)",
+          "action": "cmr.smart_inflow.top5"
+        },
+        {
+          "text": "4) Meme榜(前5)",
+          "action": "cmr.meme.top5"
+        }
+      ],
+      [
+        {
+          "text": "5) 交叉信号榜",
+          "action": "cmr.cross_signal.top"
+        }
+      ],
+      [
+        {
+          "text": "⬅️ 返回信号监控",
+          "next": "monitor"
+        }
+      ]
+    ]
+  },
+  "address_monitor": {
+    "title": "地址监控",
+    "rows": [
+      [
+        {
+          "text": "🏆 币安高收益地址榜单",
+          "action": "cmr.address_pnl.top10"
+        }
+      ],
+      [
+        {
+          "text": "⬅️ 返回信号监控",
+          "next": "monitor"
+        }
+      ]
+    ]
+  },
+  "trench_monitor": {
+    "title": "战壕监控",
+    "rows": [
+      [
+        {
+          "text": "🚀 代币发射监控",
+          "action": "meme.trench.launch_monitor.top5"
+        },
+        {
+          "text": "📡 战壕实时榜单",
+          "action": "meme.trench.realtime.boards.top5"
+        }
+      ],
+      [
+        {
+          "text": "⬅️ 返回信号监控",
+          "next": "monitor"
+        }
+      ]
+    ]
+  },
+  "invest_wallet_analysis": {
+    "title": "钱包地址分析",
+    "rows": [
+      [
+        {
+          "text": "输入钱包地址开始分析",
+          "action": "invest.wallet.analyze.prompt"
+        }
+      ],
+      [
+        {
+          "text": "⬅️ 返回智能投资助理",
+          "next": "invest_assistant"
+        }
+      ]
+    ]
+  },
+  "invest_contract_analysis": {
+    "title": "币种合约分析",
+    "rows": [
+      [
+        {
+          "text": "输入合约地址开始分析",
+          "action": "invest.contract.analyze.prompt"
+        }
+      ],
+      [
+        {
+          "text": "⬅️ 返回智能投资助理",
+          "next": "invest_assistant"
+        }
+      ]
+    ]
+  },
+  "invest_ai_research": {
+    "title": "AI智能投研",
+    "rows": [
+      [
+        {
+          "text": "alpha投研",
+          "action": "invest.ai.alpha"
+        },
+        {
+          "text": "surf高级投研",
+          "action": "invest.ai.surf"
+        }
+      ],
+      [
+        {
+          "text": "ai顾问",
+          "action": "invest.ai.advisor"
+        },
+        {
+          "text": "个人投资框架",
+          "action": "invest.ai.framework"
+        }
+      ],
+      [
+        {
+          "text": "⬅️ 返回智能投资助理",
+          "next": "invest_assistant"
         }
       ]
     ]

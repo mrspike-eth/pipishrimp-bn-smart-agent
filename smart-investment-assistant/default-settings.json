@@ -1,0 +1,23 @@
+{
+  "wallet_analysis": {
+    "trigger": "act:invest.wallet.analyze.prompt",
+    "prompt": "请输入需要分析的钱包地址（默认使用 query-address-info 分析并返回报告）",
+    "default_skill": "query-address-info"
+  },
+  "contract_analysis": {
+    "trigger": "act:invest.contract.analyze.prompt",
+    "prompt": "请输入需要分析的币种合约地址（默认使用 query-token-audit + query-token-info）",
+    "default_skills": [
+      "query-token-audit",
+      "query-token-info"
+    ]
+  },
+  "ai_research": {
+    "entries": [
+      "invest.ai.alpha",
+      "invest.ai.surf",
+      "invest.ai.advisor",
+      "invest.ai.framework"
+    ]
+  }
+}

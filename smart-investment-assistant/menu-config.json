@@ -10,18 +10,18 @@
     "rows": [
       [
         {
-          "text": "市场概览",
-          "action": "invest.market.overview"
+          "text": "钱包地址分析",
+          "next": "invest_wallet_analysis"
         },
         {
-          "text": "策略建议",
-          "action": "invest.strategy.suggest"
+          "text": "币种合约分析",
+          "next": "invest_contract_analysis"
         }
       ],
       [
         {
-          "text": "风险诊断",
-          "action": "invest.risk.check"
+          "text": "AI智能投研",
+          "next": "invest_ai_research"
         }
       ],
       [
