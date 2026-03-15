@@ -167,22 +167,18 @@
       "rows": [
         [
           {
-            "text": "账户状态",
-            "action": "spot.account"
+            "text": "账户资产",
+            "action": "spot.account.assets"
           },
           {
-            "text": "下单测试",
-            "action": "spot.order.test"
+            "text": "仓位",
+            "action": "spot.positions"
           }
         ],
         [
           {
-            "text": "一键冒烟测试",
-            "action": "spot.smoke.testnet"
-          },
-          {
-            "text": "开放订单",
-            "action": "spot.open.orders"
+            "text": "交易",
+            "action": "spot.trade"
           }
         ],
         [
