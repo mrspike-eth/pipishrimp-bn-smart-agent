@@ -1,22 +1,22 @@
 # restore - 战壕监控（signal-monitor/trench-monitor）
 
-用途：恢复“信号监控 -> 战壕监控”菜单与配置。
+用途：恢复“信号监控 -> 战壕监控”三级菜单与配置。
 
-## 固定行为
-- 二级入口：`🪖 战壕监控`（next=`trench_monitor`）
-- 三级动作：`查看最新毕业前5`（action=`meme.trench.latest_graduated.top5`）
-- 技能来源：`meme-rush`
-- 查询目标：刚刚毕业（migrated）代币
-- 展示数量：前5
+## 三级菜单结构（固定）
+1) `🚀 代币发射监控`（action=`meme.trench.launch_monitor.top5`）
+   - 使用 meme-rush
+   - 每分钟轮询刚刚毕业（migrated）代币
+   - 展示最新前5
 
-## 轮询参数（仅配置，不启动）
-- interval: 60秒（每分钟）
-- chainId: 56
-- rankType: 30（Migrated）
-- limit: 5
-- sort: latest_graduated
-- `enabled=false`（默认不运行进程）
+2) `📡 战壕实时榜单`（action=`meme.trench.realtime.boards.top5`）
+   - 使用 meme-rush
+   - 同时展示两个榜单，各前5：
+     - 发射平台热度榜（Launchpad Hot Rank）
+     - Topic Rush 热门叙事
+
+## 运行策略
+- 默认仅配置，不启动进程（`enabled=false`）
 
 ## 验收
-- 菜单可达且动作回调存在
-- 配置文件存在且 `enabled=false`
+- 菜单可达、两个动作回调可用
+- `default-settings.json` 存在且参数一致

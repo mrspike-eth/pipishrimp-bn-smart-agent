@@ -674,8 +674,12 @@
       "rows": [
         [
           {
-            "text": "查看最新毕业前5",
-            "action": "meme.trench.latest_graduated.top5"
+            "text": "🚀 代币发射监控",
+            "action": "meme.trench.launch_monitor.top5"
+          },
+          {
+            "text": "📡 战壕实时榜单",
+            "action": "meme.trench.realtime.boards.top5"
           }
         ],
         [

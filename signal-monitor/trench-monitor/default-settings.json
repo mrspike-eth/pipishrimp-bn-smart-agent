@@ -2,12 +2,26 @@
   "enabled": false,
   "mode": "config_only",
   "skill": "meme-rush",
-  "source": "migrated_tokens",
-  "description": "每分钟轮询刚刚毕业（已迁移）代币，展示最新毕业前5。仅配置，不自动启动进程。",
-  "pollIntervalSeconds": 60,
-  "chainId": "56",
-  "rankType": 30,
-  "limit": 5,
-  "sort": "latest_graduated",
-  "actionCallback": "act:meme.trench.latest_graduated.top5"
+  "menus": {
+    "launch_monitor": {
+      "title": "代币发射监控",
+      "actionCallback": "act:meme.trench.launch_monitor.top5",
+      "pollIntervalSeconds": 60,
+      "chainId": "56",
+      "rankType": 30,
+      "limit": 5,
+      "sort": "latest_graduated",
+      "description": "每分钟轮询刚刚毕业（已迁移）代币，展示最新前5。"
+    },
+    "realtime_boards": {
+      "title": "战壕实时榜单",
+      "actionCallback": "act:meme.trench.realtime.boards.top5",
+      "showTop": 5,
+      "sources": [
+        "launchpad_hot_rank",
+        "topic_rush_hot_narratives"
+      ],
+      "description": "展示发射平台热度榜前5 + Topic Rush 热门叙事前5。"
+    }
+  }
 }
