@@ -16,5 +16,15 @@
 - 回调可达、可继续跳转
 - 不出现临时占位回调
 
-## 4) 备注
+## 4) 榜单子菜单恢复规则（新增）
+- 二级菜单必须包含：`📊 币安市场币种榜单`（next=`market_rank`）。
+- `market_rank` 节点下固定 5 个动作入口：
+  1. 社交热度榜（前5）→ `cmr.social_hype.top5`
+  2. 统一代币榜（前5）→ `cmr.unified.top5`
+  3. 聪明钱净流入榜（前5）→ `cmr.smart_inflow.top5`
+  4. Meme 榜（前5）→ `cmr.meme.top5`
+  5. 交叉信号榜 → `cmr.cross_signal.top`
+- 交叉信号榜定义：以上四个榜单中出现重叠的币种（按 symbol+contractAddress 归一），按出现次数降序展示。
+
+## 5) 备注
 - 此文件仅定义恢复步骤，不保存运行时秘密。

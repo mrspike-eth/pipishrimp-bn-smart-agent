@@ -165,5 +165,42 @@
         }
       ]
     ]
+  },
+  "market_rank": {
+    "title": "币安市场币种榜单",
+    "rows": [
+      [
+        {
+          "text": "1) 社交热度榜(前5)",
+          "action": "cmr.social_hype.top5"
+        },
+        {
+          "text": "2) 统一代币榜(前5)",
+          "action": "cmr.unified.top5"
+        }
+      ],
+      [
+        {
+          "text": "3) 聪明钱净流入榜(前5)",
+          "action": "cmr.smart_inflow.top5"
+        },
+        {
+          "text": "4) Meme榜(前5)",
+          "action": "cmr.meme.top5"
+        }
+      ],
+      [
+        {
+          "text": "5) 交叉信号榜",
+          "action": "cmr.cross_signal.top"
+        }
+      ],
+      [
+        {
+          "text": "⬅️ 返回信号监控",
+          "next": "monitor"
+        }
+      ]
+    ]
   }
 }

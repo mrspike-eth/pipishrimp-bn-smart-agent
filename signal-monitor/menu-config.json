@@ -20,9 +20,15 @@
       ],
       [
         {
-          "text": "🧠 币安聪明钱监控",
+          "text": "🧠 币安聪明钱信号监控",
           "next": "smart_money_monitor"
         },
+        {
+          "text": "📊 币安市场币种榜单",
+          "next": "market_rank"
+        }
+      ],
+      [
         {
           "text": "🧰 进程管理",
           "next": "process"
