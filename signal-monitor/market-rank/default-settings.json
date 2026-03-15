@@ -1,0 +1,15 @@
+{
+  "trigger_callback": "nav:market_rank",
+  "output_mode": "fixed_full_snapshot",
+  "topN": 5,
+  "sections": [
+    "social_hype",
+    "unified",
+    "smart_money_inflow",
+    "meme",
+    "cross_signal"
+  ],
+  "cross_signal_rule": "symbol+contractAddress normalize; include tokens appearing in >=2 lists; sort by hit_count desc",
+  "format_file": "signal-monitor/market-rank/market-rank-output-template.md",
+  "notes": "Clicking 币安市场币种榜单 should directly render all 5 sections in one response; no extra click required."
+}
