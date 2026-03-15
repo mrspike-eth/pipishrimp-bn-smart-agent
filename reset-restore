@@ -111,6 +111,8 @@ RESULT: PASS/FAIL
 
 每个一级菜单目录均包含 `restore` 文件，reset 后优先按对应目录执行恢复：
 - `binance-daily/restore`
+- `binance-daily/default-settings.json`（`nav:daily` 三日报按钮固定模板）
+- `binance-daily/report-recovery-template.md`（三日报实现方式与输出格式）
 - `watchlist/restore`
 - `binance-spot-trade/restore`
 - `bn-wallet-onchain-trade/restore`

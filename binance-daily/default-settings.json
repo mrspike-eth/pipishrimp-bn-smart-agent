@@ -1,0 +1,41 @@
+{
+  "trigger_callback": "nav:daily",
+  "render_mode": "button_only",
+  "no_text_fallback": true,
+  "title": "币安日报",
+  "buttons": [
+    [
+      { "text": "🟨 币安广场日报", "callback_data": "act:daily.square" },
+      { "text": "🟦 币安活动日报", "callback_data": "act:daily.activity" }
+    ],
+    [
+      { "text": "🟪 推特日报", "callback_data": "act:daily.twitter" }
+    ],
+    [
+      { "text": "⬅️ 返回主菜单", "callback_data": "nav:main" }
+    ]
+  ],
+  "daily_types": [
+    {
+      "id": "daily.square",
+      "name": "币安广场日报",
+      "impl": "skills/binance-square-daily/scripts/generate_daily.py",
+      "output_files": ["binance_daily_YYYY-MM-DD.txt", "binance_daily.log"],
+      "output_format": "最近24小时热门文章TOP10（作者/点赞/浏览）"
+    },
+    {
+      "id": "daily.activity",
+      "name": "币安活动日报",
+      "impl": "skills/binance-activity-daily/scripts/generate_daily.py",
+      "output_files": ["activity_daily_YYYY-MM-DD.txt", "activity_daily.log"],
+      "output_format": "最近24小时公告资讯，含分类分布+TOP15标题/时间/链接"
+    },
+    {
+      "id": "daily.twitter",
+      "name": "推特日报",
+      "impl": "skills/twitter-daily/scripts/generate_daily.py",
+      "output_files": ["twitter_daily_YYYY-MM-DD.txt", "twitter_prompt_YYYY-MM-DD.txt", "twitter_daily.log"],
+      "output_format": "币安系账号推文明细 + AI总结提示词"
+    }
+  ]
+}
