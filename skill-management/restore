@@ -28,3 +28,12 @@
   3) 🗂️ 分组管理
   4) ⬅️ 返回主菜单
 - 若渲染失败：先重读本目录配置并重试一次；仍失败则显式报错，不允许静默降级为文本。
+
+
+## act:skill.list 固定模板（强制）
+- `act:skill.list` 必须渲染为“分组纵向聚合 + 每个skill可点击按钮”。
+- 每个 skill 的 callback 必须为：`act:skill.detail.<skill_name>`。
+- 禁止将 skill 列表降级为纯文本项目符号。
+- 允许分组标题行（不可点击或 noop）。
+- 底部固定按钮：`⬅️ 返回Skill管理`（`nav:skill_mgmt`）。
+- 若按钮渲染失败：重读 `skill-list-template.json` 与 `settings/menu-management/skill-list-panel.json` 后重试一次；仍失败时显式报错，不得静默文本降级。

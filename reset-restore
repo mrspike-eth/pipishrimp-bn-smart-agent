@@ -131,3 +131,5 @@ RESULT: PASS/FAIL
 
 ---
 
+
+- `skill-management/skill-list-template.json`（`act:skill.list` 按钮化强制模板）

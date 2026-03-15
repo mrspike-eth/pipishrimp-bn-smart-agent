@@ -1,0 +1,12 @@
+{
+  "trigger_callback": "act:skill.list",
+  "render_mode": "button_only_grouped_vertical",
+  "no_text_fallback": true,
+  "group_headers_clickable": false,
+  "item_callback_prefix": "act:skill.detail.",
+  "back_button": {
+    "text": "⬅️ 返回Skill管理",
+    "callback_data": "nav:skill_mgmt"
+  },
+  "required_behavior": "每个 skill 必须是可点击按钮，点击进入 skill 详情"
+}
