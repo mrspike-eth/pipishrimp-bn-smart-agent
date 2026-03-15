@@ -17,7 +17,9 @@
 - 降级数据源：Binance Web3 Social Hype（当主源失效时自动切换）
 - 输出文件：`binance_daily_YYYY-MM-DD.txt`
 - 日志：`binance_daily.log`
-- 输出格式：最近24小时热门内容 TOP10（作者/时间/赞评转阅）+ 热门话题 TOP5
+- 输出格式：
+  - TOP10 热门文章每条固定为：`第一名🥇 文章标题-作者-浏览量` + 下一行 `文章简介（<50字）`
+  - 热门话题 TOP5：`第N名 #话题` + `浏览量｜讨论数`
 
 ### B) 币安活动日报
 - 实现脚本：`skills/binance-activity-daily/scripts/generate_daily.py`
