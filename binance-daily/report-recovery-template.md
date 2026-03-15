@@ -20,6 +20,9 @@
 - 输出格式：
   - TOP10 热门文章每条固定为：`第一名🥇 文章标题-作者-浏览量` + 下一行 `文章简介（<50字）`
   - 热门话题 TOP5：`第N名 #话题` + `浏览量｜讨论数`
+  - 在热门话题 TOP5 后固定追加：`🪙 币安广场Top10热门讨论币种`
+    - 数据源：Binance Web3 Social Hype
+    - 每条格式：`第N名 币种` + 下一行 `热度值：xxxx`
 
 ### B) 币安活动日报
 - 实现脚本：`skills/binance-activity-daily/scripts/generate_daily.py`
