@@ -11,11 +11,13 @@
 
 ### A) 币安广场日报
 - 实现脚本：`skills/binance-square-daily/scripts/generate_daily.py`
-- 主数据源：Binance Square 热门列表
-- 降级数据源：Binance Web3 Social Hype（当主源 404/失效时自动切换）
+- 主数据源（前端同源接口）：
+  - 文章列表：`/bapi/composite/v3/friendly/pgc/content/article/list?pageIndex=1&pageSize=20&type=1`
+  - 热门话题：`/bapi/composite/v2/public/pgc/hashtag/hot-list`
+- 降级数据源：Binance Web3 Social Hype（当主源失效时自动切换）
 - 输出文件：`binance_daily_YYYY-MM-DD.txt`
 - 日志：`binance_daily.log`
-- 输出格式：最近24小时热门内容 TOP10，含作者/点赞/浏览
+- 输出格式：最近24小时热门内容 TOP10（作者/时间/赞评转阅）+ 热门话题 TOP5
 
 ### B) 币安活动日报
 - 实现脚本：`skills/binance-activity-daily/scripts/generate_daily.py`
