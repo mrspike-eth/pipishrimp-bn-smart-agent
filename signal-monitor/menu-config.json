@@ -34,6 +34,12 @@
           "next": "address_monitor"
         },
         {
+          "text": "🪖 战壕监控",
+          "next": "trench_monitor"
+        }
+      ],
+      [
+        {
           "text": "🧰 进程管理",
           "next": "process"
         }

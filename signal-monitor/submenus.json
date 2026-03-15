@@ -219,5 +219,22 @@
         }
       ]
     ]
+  },
+  "trench_monitor": {
+    "title": "战壕监控",
+    "rows": [
+      [
+        {
+          "text": "查看最新毕业前5",
+          "action": "meme.trench.latest_graduated.top5"
+        }
+      ],
+      [
+        {
+          "text": "⬅️ 返回信号监控",
+          "next": "monitor"
+        }
+      ]
+    ]
   }
 }

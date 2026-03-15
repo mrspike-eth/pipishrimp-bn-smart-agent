@@ -113,6 +113,12 @@
             "next": "address_monitor"
           },
           {
+            "text": "🪖 战壕监控",
+            "next": "trench_monitor"
+          }
+        ],
+        [
+          {
             "text": "🧰 进程管理",
             "next": "process"
           }
@@ -653,6 +659,23 @@
           {
             "text": "🏆 币安高收益地址榜单",
             "action": "cmr.address_pnl.top10"
+          }
+        ],
+        [
+          {
+            "text": "⬅️ 返回信号监控",
+            "next": "monitor"
+          }
+        ]
+      ]
+    },
+    "trench_monitor": {
+      "title": "战壕监控",
+      "rows": [
+        [
+          {
+            "text": "查看最新毕业前5",
+            "action": "meme.trench.latest_graduated.top5"
           }
         ],
         [

@@ -1,0 +1,13 @@
+{
+  "enabled": false,
+  "mode": "config_only",
+  "skill": "meme-rush",
+  "source": "migrated_tokens",
+  "description": "每分钟轮询刚刚毕业（已迁移）代币，展示最新毕业前5。仅配置，不自动启动进程。",
+  "pollIntervalSeconds": 60,
+  "chainId": "56",
+  "rankType": 30,
+  "limit": 5,
+  "sort": "latest_graduated",
+  "actionCallback": "act:meme.trench.latest_graduated.top5"
+}
