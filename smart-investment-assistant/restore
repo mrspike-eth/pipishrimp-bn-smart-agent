@@ -24,7 +24,8 @@
   - 行为：先询问地址，再默认调用 `query-address-info` 输出报告
 - 币种分析（next=`invest_contract_analysis`）
   - 动作：`invest.contract.analyze.prompt`
-  - 行为：先询问合约地址，再默认调用 `query-token-audit` + `query-token-info` 输出完整报告
+  - 行为：先询问合约地址，再默认调用 `query-token-audit` + `query-token-info` + `opentwitter-mcp` 输出完整报告
+  - 报告第4项固定为“推特叙事雷达”（按 `twitter-narrative-radar-template.md` 结构生成）
 - surf高级投研（action=`invest.surf.research.prompt`）
   - 行为：询问项目后，调用 asksurf 前端流程生成并回传完整研报
 

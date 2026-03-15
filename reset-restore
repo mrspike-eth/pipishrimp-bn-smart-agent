@@ -118,6 +118,7 @@ RESULT: PASS/FAIL
 - `bn-wallet-onchain-trade/restore`
 - `signal-monitor/restore`
 - `smart-investment-assistant/restore`
+- `smart-investment-assistant/twitter-narrative-radar-template.md`（币种分析第4项固定模板）
 - `content-creation/restore`
 - `learning-mode/restore`
 - `skill-management/restore`

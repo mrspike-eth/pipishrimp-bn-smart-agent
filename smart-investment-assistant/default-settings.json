@@ -6,12 +6,28 @@
   },
   "contract_analysis": {
     "trigger": "act:invest.contract.analyze.prompt",
-    "prompt": "请输入需要分析的币种合约地址（默认使用 query-token-audit + query-token-info）",
+    "prompt": "请输入需要分析的币种合约地址（默认使用 query-token-audit + query-token-info + opentwitter-mcp）",
     "default_skills": [
       "query-token-audit",
-      "query-token-info"
+      "query-token-info",
+      "opentwitter-mcp"
     ],
-    "display_name": "币种分析"
+    "display_name": "币种分析",
+    "report_sections": [
+      "1) 合约安全审计（query-token-audit）",
+      "2) 代币基础与市场数据（query-token-info）",
+      "3) 资金与热度补充（query-token-info扩展）",
+      "4) 推特叙事雷达（opentwitter-mcp）"
+    ],
+    "twitter_narrative_radar": {
+      "template": "smart-investment-assistant/twitter-narrative-radar-template.md",
+      "required": true,
+      "search_inputs": [
+        "contractAddress",
+        "symbol",
+        "projectName"
+      ]
+    }
   },
   "surf_research": {
     "trigger": "act:invest.surf.research.prompt",
