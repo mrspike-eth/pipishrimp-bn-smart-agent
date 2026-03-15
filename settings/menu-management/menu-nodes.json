@@ -175,14 +175,14 @@
           "next": "invest_wallet_analysis"
         },
         {
-          "text": "币种合约分析",
+          "text": "币种分析",
           "next": "invest_contract_analysis"
         }
       ],
       [
         {
-          "text": "AI智能投研",
-          "next": "invest_ai_research"
+          "text": "surf高级投研",
+          "action": "invest.surf.research.prompt"
         }
       ],
       [
@@ -650,43 +650,12 @@
     ]
   },
   "invest_contract_analysis": {
-    "title": "币种合约分析",
+    "title": "币种分析",
     "rows": [
       [
         {
           "text": "输入合约地址开始分析",
           "action": "invest.contract.analyze.prompt"
-        }
-      ],
-      [
-        {
-          "text": "⬅️ 返回智能投资助理",
-          "next": "invest_assistant"
-        }
-      ]
-    ]
-  },
-  "invest_ai_research": {
-    "title": "AI智能投研",
-    "rows": [
-      [
-        {
-          "text": "alpha投研",
-          "action": "invest.ai.alpha"
-        },
-        {
-          "text": "surf高级投研",
-          "action": "invest.ai.surf"
-        }
-      ],
-      [
-        {
-          "text": "ai顾问",
-          "action": "invest.ai.advisor"
-        },
-        {
-          "text": "个人投资框架",
-          "action": "invest.ai.framework"
         }
       ],
       [

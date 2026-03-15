@@ -14,14 +14,14 @@
           "next": "invest_wallet_analysis"
         },
         {
-          "text": "币种合约分析",
+          "text": "币种分析",
           "next": "invest_contract_analysis"
         }
       ],
       [
         {
-          "text": "AI智能投研",
-          "next": "invest_ai_research"
+          "text": "surf高级投研",
+          "action": "invest.surf.research.prompt"
         }
       ],
       [

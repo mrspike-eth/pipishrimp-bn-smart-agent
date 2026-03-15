@@ -10,14 +10,18 @@
     "default_skills": [
       "query-token-audit",
       "query-token-info"
-    ]
+    ],
+    "display_name": "币种分析"
   },
-  "ai_research": {
-    "entries": [
-      "invest.ai.alpha",
-      "invest.ai.surf",
-      "invest.ai.advisor",
-      "invest.ai.framework"
+  "surf_research": {
+    "trigger": "act:invest.surf.research.prompt",
+    "prompt": "请告诉我你要投研的项目名/推特账号/官网（例如：@UnitasLabs）",
+    "workflow": "asksurf_frontend_login_session",
+    "steps": [
+      "复用已登录 asksurf 页面",
+      "提交项目投研请求（完整研报）",
+      "等待生成（默认最长5分钟）",
+      "抓取并原样返回研报全文"
     ]
   }
 }
