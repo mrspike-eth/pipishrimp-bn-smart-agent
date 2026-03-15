@@ -1,0 +1,39 @@
+{
+  "trigger_callback": "nav:skill_mgmt",
+  "render_mode": "button_only",
+  "no_text_fallback": true,
+  "buttons": [
+    [
+      {
+        "text": "查看已安装技能(分组)",
+        "callback_data": "act:skill.list"
+      },
+      {
+        "text": "搜索新技能",
+        "callback_data": "act:skill.search"
+      }
+    ],
+    [
+      {
+        "text": "安装技能",
+        "callback_data": "act:skill.install"
+      },
+      {
+        "text": "更新技能",
+        "callback_data": "act:skill.update"
+      }
+    ],
+    [
+      {
+        "text": "🗂️ 分组管理",
+        "callback_data": "nav:skill_group_mgmt"
+      }
+    ],
+    [
+      {
+        "text": "⬅️ 返回主菜单",
+        "callback_data": "nav:main"
+      }
+    ]
+  ]
+}

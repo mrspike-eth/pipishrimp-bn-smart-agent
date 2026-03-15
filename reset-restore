@@ -119,6 +119,7 @@ RESULT: PASS/FAIL
 - `content-creation/restore`
 - `learning-mode/restore`
 - `skill-management/restore`
+- `skill-management/default-settings.json`（`nav:skill_mgmt` 按钮固定模板，禁止文本兜底）
 - `settings/restore`
 
 其中“信号监控 -> 进程管理”专用恢复路径：
