@@ -1,0 +1,11 @@
+{
+  "trigger": "act:spot.refresh",
+  "render_mode": "button_only_dynamic",
+  "labels": {
+    "assets": "账户资产（≈$%s）",
+    "positions": "仓位（%s持仓）",
+    "trades": "交易（%s笔）",
+    "pnl": "pnl收益统计（%s）"
+  },
+  "pnl_show_currency": false
+}
