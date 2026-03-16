@@ -171,12 +171,18 @@
       "rows": [
         [
           {
-            "text": "账户资产",
+            "text": "账户资产（实时USD）",
             "action": "spot.account.assets"
-          },
+          }
+        ],
+        [
           {
             "text": "仓位",
             "action": "spot.positions"
+          },
+          {
+            "text": "挂单",
+            "action": "spot.open_orders"
           }
         ],
         [
@@ -190,6 +196,10 @@
           }
         ],
         [
+          {
+            "text": "🔄 刷新数据",
+            "action": "spot.refresh"
+          },
           {
             "text": "⬅️ 返回主菜单",
             "next": "main"
