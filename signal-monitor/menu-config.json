@@ -10,11 +10,11 @@
     "rows": [
       [
         {
-          "text": "📈 CCI监控",
+          "text": "📈 CCI指标监控",
           "next": "cci"
         },
         {
-          "text": "📱 Telegram监控",
+          "text": "📱 Telegram本地转发监控",
           "next": "telegram"
         }
       ],
