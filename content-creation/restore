@@ -25,3 +25,8 @@
 - 交易复盘（action=`square.create.trade_review`）
 - 热点快评（action=`square.create.hot_comment`）
 - 返回主菜单（`nav:main`）
+
+## 6) Square OpenAPI Key 默认读取
+- 本地密钥文件：`/Users/chenshuang/.openclaw/workspace-coding/secure/square_openapi.env`
+- 读取键名：`SQUARE_OPENAPI_KEY`
+- 若文件缺失或为空：提示用户补全后再发帖

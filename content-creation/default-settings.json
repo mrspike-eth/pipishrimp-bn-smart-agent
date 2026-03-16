@@ -1,0 +1,7 @@
+{
+  "square_post": {
+    "credential_source": "/Users/chenshuang/.openclaw/workspace-coding/secure/square_openapi.env",
+    "key_name": "SQUARE_OPENAPI_KEY",
+    "mask_preview": true
+  }
+}

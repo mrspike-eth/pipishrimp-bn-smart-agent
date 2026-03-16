@@ -120,6 +120,7 @@ RESULT: PASS/FAIL
 - `smart-investment-assistant/restore`
 - `smart-investment-assistant/twitter-narrative-radar-template.md`（币种分析第4项固定模板）
 - `content-creation/restore`
+- `content-creation/default-settings.json`（Square OpenAPI Key 默认读取路径）
 - `learning-mode/restore`
 - `skill-management/restore`
 - `skill-management/default-settings.json`（`nav:skill_mgmt` 按钮固定模板，禁止文本兜底）
