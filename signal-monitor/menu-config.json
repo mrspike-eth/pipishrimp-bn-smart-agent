@@ -40,6 +40,10 @@
       ],
       [
         {
+          "text": "🗞️ 6551新闻秒级监控",
+          "next": "news_6551_monitor"
+        },
+        {
           "text": "🧰 进程管理",
           "next": "process"
         }

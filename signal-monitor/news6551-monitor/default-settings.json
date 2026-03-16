@@ -1,0 +1,28 @@
+{
+  "process_name": "6551新闻秒级监控",
+  "menu_node": "news_6551_monitor",
+  "actions": {
+    "start": "news6551.start",
+    "stop": "news6551.stop",
+    "status": "news6551.status",
+    "logs": "news6551.logs.tail"
+  },
+  "source": "opennews-mcp",
+  "engineTypes": {
+    "listing": [
+      "binance",
+      "coinbase",
+      "okx",
+      "bybit",
+      "upbit",
+      "bithumb",
+      "robinhood",
+      "hyperliquid",
+      "aster"
+    ]
+  },
+  "poll_interval_seconds": 1,
+  "push_channel": "primary_pushover_only",
+  "push_priority": "emergency",
+  "note": "仅推送主Pushover，priority=2/retry=30/expire=3600"
+}

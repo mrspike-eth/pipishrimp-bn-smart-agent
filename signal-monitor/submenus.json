@@ -240,5 +240,36 @@
         }
       ]
     ]
+  },
+  "news_6551_monitor": {
+    "title": "6551新闻秒级监控",
+    "rows": [
+      [
+        {
+          "text": "启动监控",
+          "action": "news6551.start"
+        },
+        {
+          "text": "停止监控",
+          "action": "news6551.stop"
+        }
+      ],
+      [
+        {
+          "text": "查看状态",
+          "action": "news6551.status"
+        },
+        {
+          "text": "最近日志",
+          "action": "news6551.logs.tail"
+        }
+      ],
+      [
+        {
+          "text": "⬅️ 返回信号监控",
+          "next": "monitor"
+        }
+      ]
+    ]
   }
 }
