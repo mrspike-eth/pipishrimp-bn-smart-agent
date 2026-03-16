@@ -150,7 +150,7 @@
     ]
   },
   "onchain_trade": {
-    "title": "Wallet链上交易",
+    "title": "BN Wallet链上交易",
     "rows": [
       [
         {

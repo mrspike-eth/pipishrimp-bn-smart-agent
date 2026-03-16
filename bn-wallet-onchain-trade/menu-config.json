@@ -6,7 +6,7 @@
     "next": "onchain_trade"
   },
   "node": {
-    "title": "Wallet链上交易",
+    "title": "BN Wallet链上交易",
     "rows": [
       [
         {
