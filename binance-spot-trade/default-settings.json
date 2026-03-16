@@ -1,6 +1,7 @@
 {
   "trigger": "act:spot.refresh",
   "render_mode": "button_only_dynamic",
+  "credential_source": "/Users/chenshuang/.openclaw/workspace-coding/secure/binance_spot.env",
   "labels": {
     "assets": "账户资产（≈$%s）",
     "positions": "仓位（%s持仓）",
