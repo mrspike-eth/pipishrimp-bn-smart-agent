@@ -29,3 +29,7 @@
 - 本地密钥默认读取文件：`/Users/chenshuang/.openclaw/workspace-coding/secure/binance_spot.env`
   - 推荐键：`BINANCE_API_KEY` / `BINANCE_API_SECRET` / `BINANCE_ENV` / `BINANCE_BASE_URL`
   - reset 后恢复数据时优先读取该文件；若缺失则提示用户补全。
+- 仓位显示过滤规则（默认启用）：
+  - 隐藏粉尘仓位（不满足最小下单量/最小名义价值）
+  - 隐藏不可交易或无 USDT 交易对资产
+  - 仅统计可交易仓位数量

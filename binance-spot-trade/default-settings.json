@@ -2,6 +2,11 @@
   "trigger": "act:spot.refresh",
   "render_mode": "button_only_dynamic",
   "credential_source": "/Users/chenshuang/.openclaw/workspace-coding/secure/binance_spot.env",
+  "position_filters": {
+    "hide_dust": true,
+    "hide_non_tradable_pairs": true,
+    "quote_asset": "USDT"
+  },
   "labels": {
     "assets": "账户资产（≈$%s）",
     "positions": "仓位（%s持仓）",
