@@ -23,6 +23,7 @@
 - 进入 `nav:watchlist` 时自动展示当前关注币种（button-first + 文本列表）。
 - 每行一个币种，格式：
   `币种名称 市值： 流动性： 24h交易量： 持有者：`
+- 数值显示规则：千分位 + 整数（不显示小数）
 - 运行时列表文件：`/Users/chenshuang/.openclaw/workspace-coding/secure/watchlist_tokens.json`
 
 ## 6) 添加币种规则（固定）

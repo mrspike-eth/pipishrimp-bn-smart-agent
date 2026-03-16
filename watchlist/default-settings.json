@@ -3,7 +3,12 @@
   "auto_show_watchlist": true,
   "render": {
     "one_coin_per_row": true,
-    "format": "%s 市值：%s 流动性：%s 24h交易量：%s 持有者：%s"
+    "format": "%s 市值：%s 流动性：%s 24h交易量：%s 持有者：%s",
+    "number_format": {
+      "thousands_separator": ",",
+      "decimals": 0,
+      "integer_only": true
+    }
   },
   "data_source": {
     "add_flow": "invest_assistant.contract_analysis",
