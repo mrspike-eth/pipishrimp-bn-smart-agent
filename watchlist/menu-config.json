@@ -10,22 +10,8 @@
     "rows": [
       [
         {
-          "text": "查看自选列表",
-          "action": "watchlist.show"
-        },
-        {
-          "text": "添加币种",
-          "action": "watchlist.add"
-        }
-      ],
-      [
-        {
-          "text": "删除币种",
-          "action": "watchlist.remove"
-        },
-        {
-          "text": "清空列表",
-          "action": "watchlist.clear"
+          "text": "（动态）自选币种按钮列表",
+          "action": "watchlist.dynamic.tokens"
         }
       ],
       [

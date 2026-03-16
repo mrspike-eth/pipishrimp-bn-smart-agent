@@ -1,45 +1,32 @@
 {
   "trigger_on_enter": "nav:watchlist",
-  "auto_show_watchlist": true,
-  "render": {
-    "layout": "three_lines_per_coin",
-    "line1_format": "%s 市值：%s 流动性：%s 24h交易量：%s 持有者：%s",
-    "line2_format": "合约地址：%s",
-    "line3_label": "操作：",
-    "line3_buttons": [
-      {
-        "text": "wallet购买",
-        "callback": "act:watchlist.wallet.buy.{address}",
-        "route": "nav:onchain_trade"
+  "menu_logic": {
+    "level2": {
+      "show_only_token_buttons": true,
+      "hide_other_options": true,
+      "token_button_callback": "nav:watchlist.token.{symbol}"
+    },
+    "level3": {
+      "title_format": "%s",
+      "detail_line_format": "市值：%s 流动性：%s 24h交易量：%s 持有者：%s",
+      "number_format": {
+        "thousands_separator": ",",
+        "decimals": 0,
+        "integer_only": true
       },
-      {
-        "text": "wallet卖出",
-        "callback": "act:watchlist.wallet.sell.{address}",
-        "route": "nav:onchain_trade"
-      },
-      {
-        "text": "spot购买",
-        "callback": "act:watchlist.spot.buy.{symbol}",
-        "route": "nav:spot_trade"
-      },
-      {
-        "text": "spot卖出",
-        "callback": "act:watchlist.spot.sell.{symbol}",
-        "route": "nav:spot_trade"
-      }
-    ],
-    "number_format": {
-      "thousands_separator": ",",
-      "decimals": 0,
-      "integer_only": true
+      "buttons": [
+        {"text": "wallet购买", "callback": "act:watchlist.wallet.buy.{address}", "route": "nav:onchain_trade"},
+        {"text": "wallet卖出", "callback": "act:watchlist.wallet.sell.{address}", "route": "nav:onchain_trade"},
+        {"text": "spot购买", "callback": "act:watchlist.spot.buy.{symbol}", "route": "nav:spot_trade"},
+        {"text": "spot卖出", "callback": "act:watchlist.spot.sell.{symbol}", "route": "nav:spot_trade"},
+        {"text": "添加币种", "callback": "act:watchlist.add"},
+        {"text": "删除币种", "callback": "act:watchlist.remove"}
+      ]
     }
   },
   "data_source": {
     "add_flow": "invest_assistant.contract_analysis",
-    "required_skills": [
-      "query-token-info",
-      "query-token-audit"
-    ],
+    "required_skills": ["query-token-info", "query-token-audit"],
     "runtime_watchlist_file": "/Users/chenshuang/.openclaw/workspace-coding/secure/watchlist_tokens.json"
   }
 }
