@@ -46,7 +46,7 @@
         },
         {
           "text": "📊 币安市场币种榜单",
-          "next": "market_rank"
+          "action": "cmr.report.all"
         }
       ],
       [
