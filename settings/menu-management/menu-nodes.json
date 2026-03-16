@@ -42,7 +42,7 @@
       [
         {
           "text": "🧠 币安聪明钱信号监控",
-          "next": "smart_money_monitor"
+          "action": "smart.report.now"
         },
         {
           "text": "📊 币安市场币种榜单",
