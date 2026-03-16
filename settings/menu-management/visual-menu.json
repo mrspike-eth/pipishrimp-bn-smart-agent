@@ -40,7 +40,7 @@
           "next": "content_create"
         },
         {
-          "text": "📚 学习模式",
+          "text": "📚 币安学院",
           "next": "learning_mode"
         }
       ],
@@ -270,22 +270,152 @@
       ]
     },
     "learning_mode": {
-      "title": "学习模式",
+      "title": "币安学院",
       "rows": [
         [
           {
-            "text": "今日学习清单",
-            "action": "learn.today.list"
+            "text": "AI",
+            "action": "academy.topic.ai.top10"
           },
           {
-            "text": "主题学习计划",
-            "action": "learn.topic.plan"
+            "text": "其它数字货币",
+            "action": "academy.topic.altcoin.top10"
           }
         ],
         [
           {
-            "text": "术语卡片",
-            "action": "learn.term.cards"
+            "text": "币安",
+            "action": "academy.topic.binance.top10"
+          },
+          {
+            "text": "币安产品指南",
+            "action": "academy.topic.binance-product-guides.top10"
+          }
+        ],
+        [
+          {
+            "text": "比特币",
+            "action": "academy.topic.bitcoin.top10"
+          },
+          {
+            "text": "区块链",
+            "action": "academy.topic.blockchain.top10"
+          }
+        ],
+        [
+          {
+            "text": "共识",
+            "action": "academy.topic.consensus.top10"
+          },
+          {
+            "text": "密码学",
+            "action": "academy.topic.cryptography.top10"
+          }
+        ],
+        [
+          {
+            "text": "DeFi",
+            "action": "academy.topic.defi.top10"
+          },
+          {
+            "text": "开发者",
+            "action": "academy.topic.developer.top10"
+          }
+        ],
+        [
+          {
+            "text": "经济学",
+            "action": "academy.topic.economics.top10"
+          },
+          {
+            "text": "要点",
+            "action": "academy.topic.essentials.top10"
+          }
+        ],
+        [
+          {
+            "text": "以太坊",
+            "action": "academy.topic.ethereum.top10"
+          },
+          {
+            "text": "历史",
+            "action": "academy.topic.history.top10"
+          }
+        ],
+        [
+          {
+            "text": "Meme 币",
+            "action": "academy.topic.meme.top10"
+          },
+          {
+            "text": "元宇宙",
+            "action": "academy.topic.metaverse.top10"
+          }
+        ],
+        [
+          {
+            "text": "挖矿",
+            "action": "academy.topic.mining.top10"
+          },
+          {
+            "text": "NFT",
+            "action": "academy.topic.nft.top10"
+          }
+        ],
+        [
+          {
+            "text": "个人理财",
+            "action": "academy.topic.personal-finance.top10"
+          },
+          {
+            "text": "隐私",
+            "action": "academy.topic.privacy.top10"
+          }
+        ],
+        [
+          {
+            "text": "安全",
+            "action": "academy.topic.security.top10"
+          },
+          {
+            "text": "稳定币",
+            "action": "academy.topic.stablecoins.top10"
+          }
+        ],
+        [
+          {
+            "text": "技术",
+            "action": "academy.topic.tech.top10"
+          },
+          {
+            "text": "技术分析",
+            "action": "academy.topic.technical-analysis.top10"
+          }
+        ],
+        [
+          {
+            "text": "传统金融",
+            "action": "academy.topic.tradfi.top10"
+          },
+          {
+            "text": "交易",
+            "action": "academy.topic.trading.top10"
+          }
+        ],
+        [
+          {
+            "text": "教程",
+            "action": "academy.topic.tutorials.top10"
+          },
+          {
+            "text": "用例",
+            "action": "academy.topic.use-cases.top10"
+          }
+        ],
+        [
+          {
+            "text": "钱包",
+            "action": "academy.topic.wallet.top10"
           }
         ],
         [
