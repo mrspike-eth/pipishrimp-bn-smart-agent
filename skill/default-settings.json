@@ -1,0 +1,10 @@
+{
+  "shared_api": {
+    "mcp_6551": {
+      "credential_source": "/Users/chenshuang/.openclaw/workspace-coding/secure/mcp_6551.env",
+      "skills": ["opennews-mcp", "opentwitter-mcp"],
+      "keys": ["OPEN6551_TOKEN", "OPENNEWS_TOKEN", "TWITTER_TOKEN"],
+      "restore_default": true
+    }
+  }
+}

@@ -77,6 +77,7 @@ bash scripts/restore_from_reset.sh
 ### Step-3：恢复技能视图与分组
 
 - 读取 `skill/skills-config.json`
+- 读取 `skill/default-settings.json`（opennews/opentwitter 共用 6551 token 默认读取）
 - 保证“已安装技能”使用分组纵向聚合显示（同组纵向连续，不跨组混排）
 
 ### Step-4：状态检查清单
