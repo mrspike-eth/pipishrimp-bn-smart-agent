@@ -369,22 +369,22 @@
     ]
   },
   "content_create": {
-    "title": "内容创作",
+    "title": "币安广场创作",
     "rows": [
       [
         {
-          "text": "公众号文章",
-          "action": "content.wechat.article"
+          "text": "行情观点",
+          "action": "square.create.market_view"
         },
         {
-          "text": "Binance Square发帖",
-          "action": "content.square.post"
+          "text": "交易复盘",
+          "action": "square.create.trade_review"
         }
       ],
       [
         {
-          "text": "日报摘要生成",
-          "action": "content.daily.summary"
+          "text": "热点快评",
+          "action": "square.create.hot_comment"
         }
       ],
       [

@@ -18,3 +18,10 @@
 
 ## 4) 备注
 - 此文件仅定义恢复步骤，不保存运行时秘密。
+
+
+## 5) 币安广场创作固定二级菜单
+- 行情观点（action=`square.create.market_view`）
+- 交易复盘（action=`square.create.trade_review`）
+- 热点快评（action=`square.create.hot_comment`）
+- 返回主菜单（`nav:main`）
