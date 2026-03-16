@@ -15,13 +15,19 @@
         "integer_only": true
       },
       "buttons": [
-        {"text": "wallet购买", "callback": "act:watchlist.wallet.buy.{address}", "route": "nav:onchain_trade"},
-        {"text": "wallet卖出", "callback": "act:watchlist.wallet.sell.{address}", "route": "nav:onchain_trade"},
-        {"text": "spot购买", "callback": "act:watchlist.spot.buy.{symbol}", "route": "nav:spot_trade"},
-        {"text": "spot卖出", "callback": "act:watchlist.spot.sell.{symbol}", "route": "nav:spot_trade"},
+        {"text": "wallet购买", "callback": "act:watchlist.wallet.buy.{address}", "executor": "wallet_trade", "action": "buy"},
+        {"text": "wallet卖出", "callback": "act:watchlist.wallet.sell.{address}", "executor": "wallet_trade", "action": "sell"},
+        {"text": "spot购买", "callback": "act:watchlist.spot.buy.{symbol}", "executor": "spot_trade", "action": "buy"},
+        {"text": "spot卖出", "callback": "act:watchlist.spot.sell.{symbol}", "executor": "spot_trade", "action": "sell"},
         {"text": "添加币种", "callback": "act:watchlist.add"},
         {"text": "删除币种", "callback": "act:watchlist.remove"}
-      ]
+      ],
+      "post_trade_sync": {
+        "enabled": true,
+        "wallet": true,
+        "spot": true,
+        "auto_refresh_watchlist": true
+      }
     }
   },
   "data_source": {

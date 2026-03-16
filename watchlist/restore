@@ -24,9 +24,10 @@
 - 点击某个币种名称后进入三级菜单，内容结构固定：
   1) 详情行：`市值： 流动性： 24h交易量： 持有者：`（千分位 + 整数）
   2) 操作按钮共6个：`wallet购买 / wallet卖出 / spot购买 / spot卖出 / 添加币种 / 删除币种`
-- 操作路由规则：
-  - wallet操作默认走一级菜单 `BN Wallet链上交易` 路径（`nav:onchain_trade`）
-  - spot操作默认走一级菜单 `币安现货交易` 路径（`nav:spot_trade`）
+- 操作执行规则：
+  - wallet操作使用钱包账户直接执行链上买卖（非页面跳转）
+  - spot操作使用现货账户直接执行买卖（非页面跳转）
+  - 每次交易完成后自动同步并刷新对应 wallet/spot 数据与自选信息
 - 运行时列表文件：`/Users/chenshuang/.openclaw/workspace-coding/secure/watchlist_tokens.json`
 
 ## 6) 添加币种规则（固定）
