@@ -208,29 +208,33 @@
       ]
     },
     "onchain_trade": {
-      "title": "BN Wallet链上交易",
+      "title": "Wallet链上交易",
       "rows": [
         [
           {
-            "text": "热门币查询",
-            "action": "onchain.hot.tokens"
+            "text": "钱包资金",
+            "action": "onchain.wallet.funds"
           },
           {
-            "text": "安全审计",
-            "action": "onchain.audit"
+            "text": "持仓币种",
+            "action": "onchain.wallet.positions"
           }
         ],
         [
           {
-            "text": "地址持仓",
-            "action": "onchain.address.info"
+            "text": "交易记录",
+            "action": "onchain.wallet.trades"
           },
           {
-            "text": "交易信号",
-            "action": "onchain.signal"
+            "text": "pnl收益情况",
+            "action": "onchain.wallet.pnl"
           }
         ],
         [
+          {
+            "text": "🔄 刷新数据",
+            "action": "onchain.wallet.refresh"
+          },
           {
             "text": "⬅️ 返回主菜单",
             "next": "main"

@@ -16,5 +16,17 @@
 - 回调可达、可继续跳转
 - 不出现临时占位回调
 
-## 4) 备注
+
+## 4) 二级菜单结构（强制）
+- 钱包资金（action=`onchain.wallet.funds`）
+- 持仓币种（action=`onchain.wallet.positions`）
+- 交易记录（action=`onchain.wallet.trades`）
+- pnl收益情况（action=`onchain.wallet.pnl`）
+- 额外按钮：刷新数据（`onchain.wallet.refresh`）/ 返回主菜单（`nav:main`）
+- 数据驱动：`bnbchain-mcp`
+
+## 5) 参考配置
+- `default-settings.json`
+
+## 6) 备注
 - 此文件仅定义恢复步骤，不保存运行时秘密。

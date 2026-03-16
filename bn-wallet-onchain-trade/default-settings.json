@@ -1,0 +1,23 @@
+{
+  "driver_skill": "bnbchain-mcp",
+  "buttons": [
+    [
+      "onchain.wallet.funds",
+      "onchain.wallet.positions"
+    ],
+    [
+      "onchain.wallet.trades",
+      "onchain.wallet.pnl"
+    ],
+    [
+      "onchain.wallet.refresh",
+      "nav:main"
+    ]
+  ],
+  "sections": {
+    "funds": "钱包资金",
+    "positions": "持仓币种",
+    "trades": "交易记录",
+    "pnl": "pnl收益情况"
+  }
+}
