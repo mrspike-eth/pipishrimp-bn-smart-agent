@@ -506,26 +506,12 @@
     ]
   },
   "smart_money_monitor": {
-    "title": "币安聪明钱监控",
+    "title": "币安聪明钱信号报告",
     "rows": [
       [
         {
-          "text": "查看状态",
-          "action": "smart.status"
-        },
-        {
-          "text": "启动监控",
-          "action": "smart.start"
-        }
-      ],
-      [
-        {
-          "text": "停止监控",
-          "action": "smart.stop"
-        },
-        {
-          "text": "最近日志",
-          "action": "smart.logs.tail"
+          "text": "📊 立即读取并生成报告",
+          "action": "smart.report.now"
         }
       ],
       [
