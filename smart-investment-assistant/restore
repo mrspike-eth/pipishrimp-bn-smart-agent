@@ -26,8 +26,15 @@
   - 动作：`invest.contract.analyze.prompt`
   - 行为：先询问合约地址，再默认调用 `query-token-audit` + `query-token-info` + `opentwitter-mcp` 输出完整报告
   - 报告第4项固定为“推特叙事雷达”（按 `twitter-narrative-radar-template.md` 结构生成）
+  - 报告结束后固定追问：`是否加入自选列表？`
 - surf高级投研（action=`invest.surf.research.prompt`）
   - 行为：询问项目后，调用 asksurf 前端流程生成并回传完整研报
+
+## 4.1) 文本输入自动识别（强制）
+- 用户直接发送 EVM 地址时，系统应自动判断“钱包地址 or 币种合约”。
+- 若判定钱包地址：直接调用钱包地址分析并返回报告。
+- 若判定币种合约：直接调用币种分析并返回报告，随后提示是否加入自选列表。
+- 若无法准确判定：优先按币种分析尝试，失败再回退钱包地址分析。
 
 ## 5) 参考配置
 - `submenus.json`

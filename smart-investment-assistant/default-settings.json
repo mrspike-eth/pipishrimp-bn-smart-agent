@@ -1,4 +1,24 @@
 {
+  "auto_detect_input_route": {
+    "enabled": true,
+    "on_plain_text_input": true,
+    "detect": {
+      "wallet_address": {
+        "evm_regex": "^0x[a-fA-F0-9]{40}$",
+        "route": "wallet_analysis",
+        "auto_run": true,
+        "report": "wallet"
+      },
+      "token_contract": {
+        "evm_regex": "^0x[a-fA-F0-9]{40}$",
+        "route": "contract_analysis",
+        "auto_run": true,
+        "report": "token",
+        "after_report_prompt": "是否加入自选列表？"
+      }
+    },
+    "disambiguation_rule": "如果无法从上下文区分地址类型，先尝试币种合约分析；若无代币信息则回退钱包地址分析"
+  },
   "wallet_analysis": {
     "trigger": "act:invest.wallet.analyze.prompt",
     "prompt": "请输入需要分析的钱包地址（默认使用 query-address-info 分析并返回报告）",
