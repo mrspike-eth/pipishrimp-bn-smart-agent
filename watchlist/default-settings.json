@@ -1,0 +1,13 @@
+{
+  "trigger_on_enter": "nav:watchlist",
+  "auto_show_watchlist": true,
+  "render": {
+    "one_coin_per_row": true,
+    "format": "%s 市值：%s 流动性：%s 24h交易量：%s 持有者：%s"
+  },
+  "data_source": {
+    "add_flow": "invest_assistant.contract_analysis",
+    "required_skills": ["query-token-info", "query-token-audit"],
+    "runtime_watchlist_file": "/Users/chenshuang/.openclaw/workspace-coding/secure/watchlist_tokens.json"
+  }
+}

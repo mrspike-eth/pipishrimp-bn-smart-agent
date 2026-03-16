@@ -114,6 +114,7 @@ RESULT: PASS/FAIL
 - `binance-daily/default-settings.json`（`nav:daily` 三日报按钮固定模板）
 - `binance-daily/report-recovery-template.md`（三日报实现方式与输出格式）
 - `watchlist/restore`
+- `watchlist/default-settings.json`（自选列表自动展示与添加规则）
 - `binance-spot-trade/restore`
 - `bn-wallet-onchain-trade/restore`
 - `signal-monitor/restore`

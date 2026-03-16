@@ -18,3 +18,14 @@
 
 ## 4) 备注
 - 此文件仅定义恢复步骤，不保存运行时秘密。
+
+## 5) 自选列表展示规则（固定）
+- 进入 `nav:watchlist` 时自动展示当前关注币种（button-first + 文本列表）。
+- 每行一个币种，格式：
+  `币种名称 市值： 流动性： 24h交易量： 持有者：`
+- 运行时列表文件：`/Users/chenshuang/.openclaw/workspace-coding/secure/watchlist_tokens.json`
+
+## 6) 添加币种规则（固定）
+- 新增资产必须先走「智能投资助理 -> 币种分析」流程。
+- 分析数据源要求：`query-token-info` + `query-token-audit`。
+- 分析完成后再写入 watchlist 运行时文件。
