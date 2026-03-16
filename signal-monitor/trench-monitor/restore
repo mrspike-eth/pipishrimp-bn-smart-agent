@@ -7,6 +7,7 @@
    - 使用 meme-rush
    - 每分钟轮询刚刚毕业（migrated）代币
    - 展示最新前5
+   - 输出要求：每条必须显示 `合约地址`
 
 2) `📡 战壕实时榜单`（action=`meme.trench.realtime.boards.top5`）
    - 使用 meme-rush

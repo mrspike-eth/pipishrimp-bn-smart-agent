@@ -21,7 +21,8 @@
         "launchpad_hot_rank",
         "topic_rush_hot_narratives"
       ],
-      "description": "展示发射平台热度榜前5 + Topic Rush 热门叙事前5。"
+      "requiredFields": ["symbol", "contractAddress", "marketCap", "liquidity", "volume", "topicName", "topicNetInflow"],
+      "description": "展示发射平台热度榜前5 + Topic Rush 热门叙事前5。每条必须显示合约地址。"
     }
   }
 }
