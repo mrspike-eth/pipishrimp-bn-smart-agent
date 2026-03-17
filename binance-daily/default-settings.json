@@ -36,7 +36,7 @@
         "binance_daily_YYYY-MM-DD.txt",
         "binance_daily.log"
       ],
-      "output_format": "最近24小时热门文章TOP10（完整标题+≤30字简介）+ 热门讨论币种Top10竖向排列"
+      "output_format": "固定模板：TOP10完整标题+≤100字简介 / 热点话题TOP5 / Social Hype Top10竖向排列"
     },
     {
       "id": "daily.activity",
