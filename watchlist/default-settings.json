@@ -1,6 +1,12 @@
 {
   "trigger_on_enter": "nav:watchlist",
   "menu_logic": {
+    "sell_guard": {
+      "dust_skip_enabled": true,
+      "dust_threshold_tokens": 0.000001,
+      "dust_behavior": "skip_sell_and_warn",
+      "message": "检测到dust级尾仓，默认跳过卖出，避免无效交易消耗gas。"
+    },
     "level2": {
       "show_only_token_buttons": true,
       "hide_other_options": true,

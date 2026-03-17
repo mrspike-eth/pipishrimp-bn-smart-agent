@@ -30,6 +30,8 @@
   - wallet操作使用钱包账户直接执行链上买卖（非页面跳转）
   - spot操作使用现货账户直接执行买卖（非页面跳转）
   - 每次交易完成后自动同步并刷新对应 wallet/spot 数据与自选信息
+  - 卖出防呆：若检测为 dust 级尾仓（默认阈值 `<= 0.000001`），默认跳过卖出并提示，避免无效交易消耗 gas
+  - 卖出失败兜底：非 dust 情况下，自动按多策略连续尝试（不同滑点/路由）直到成功或策略耗尽
 - 运行时列表文件：`/Users/chenshuang/.openclaw/workspace-coding/secure/watchlist_tokens.json`
 
 ## 6) 添加币种规则（固定）
