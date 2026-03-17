@@ -40,7 +40,12 @@
 - 数据来源：apidance.pro（币安系账号）
 - 输出文件：`twitter_daily_YYYY-MM-DD.txt` + `twitter_prompt_YYYY-MM-DD.txt`
 - 日志：`twitter_daily.log`
-- 输出格式：账号推文明细 + AI总结提示词
+- 默认展示格式（聊天内直出，非附件）：
+  1) 统计范围 / 有效账号 / 总推文数
+  2) 按人物分类
+  3) 热点事件（3-5个）
+  4) 市场情绪
+  5) 关键信息（1-2条）
 
 ## 验收标准
 - `nav:daily` 固定为“三日报按钮版”

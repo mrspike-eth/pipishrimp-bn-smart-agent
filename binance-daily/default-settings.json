@@ -58,7 +58,7 @@
         "twitter_prompt_YYYY-MM-DD.txt",
         "twitter_daily.log"
       ],
-      "output_format": "币安系账号推文明细 + AI总结提示词"
+      "output_format": "结构化结论版：统计范围/人物分类/热点事件/市场情绪/关键信息（聊天内直出）"
     }
   ],
   "force_inline_keyboard": true,
