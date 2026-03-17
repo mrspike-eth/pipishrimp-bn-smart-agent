@@ -5,6 +5,13 @@
       "skills": ["opennews-mcp", "opentwitter-mcp"],
       "keys": ["OPEN6551_TOKEN", "OPENNEWS_TOKEN", "TWITTER_TOKEN"],
       "restore_default": true
+    },
+    "twitter_daily": {
+      "credential_source": "/Users/chenshuang/.openclaw/workspace-coding/secure/twitter_daily.env",
+      "skills": ["twitter-daily"],
+      "keys": ["TWITTER_API_KEY", "TWITTER_API_BASE", "TWITTER_HOURS_BACK"],
+      "restore_default": true,
+      "note": "推特日报凭据独立于 mcp_6551"
     }
   }
 }

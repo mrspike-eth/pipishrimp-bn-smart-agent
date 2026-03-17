@@ -52,6 +52,7 @@
       "id": "daily.twitter",
       "name": "推特日报",
       "impl": "skills/twitter-daily/scripts/generate_daily.py",
+      "credential_source": "/Users/chenshuang/.openclaw/workspace-coding/secure/twitter_daily.env",
       "output_files": [
         "twitter_daily_YYYY-MM-DD.txt",
         "twitter_prompt_YYYY-MM-DD.txt",
