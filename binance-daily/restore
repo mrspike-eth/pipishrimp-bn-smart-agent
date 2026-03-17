@@ -25,6 +25,9 @@
   3) `🟪 推特日报` → `act:daily.twitter`
   4) `⬅️ 返回主菜单` → `nav:main`
 - 若渲染失败：先重读 `default-settings.json` 与 `report-recovery-template.md` 重试一次；仍失败要显式报错，不允许降级旧简化菜单。
+- `act:daily.square` 输出逻辑固定：
+  1) TOP10文章必须显示“完整标题 + ≤100字简介”；
+  2) 热门讨论币种 Top10 必须竖向逐条输出（第N名 + 热度值），禁止单行横排。
 
 ## 5) 参考资料
 - `default-settings.json`
