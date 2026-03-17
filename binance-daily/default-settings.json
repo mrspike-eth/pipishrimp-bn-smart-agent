@@ -60,5 +60,7 @@
       "output_format": "币安系账号推文明细 + AI总结提示词"
     }
   ],
-  "force_inline_keyboard": true
+  "force_inline_keyboard": true,
+  "square_send_mode": "full_default"
+
 }
